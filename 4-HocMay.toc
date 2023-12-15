@@ -1,0 +1,12 @@
+\babel@toc {vietnamese}{}\relax 
+\beamer@sectionintoc {1}{Giới thiệu bài toán}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Đặt vấn đề}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{9}{0}{1}
+\beamer@sectionintoc {2}{Thuật toán tính bao lồi xấp xỉ}{35}{0}{2}
+\beamer@subsectionintoc {2}{1}{Outer convex approximation}{36}{0}{2}
+\beamer@subsectionintoc {2}{2}{Inner convex approximation}{48}{0}{2}
+\beamer@sectionintoc {3}{Thuật toán tính bao lồi trực giao}{50}{0}{3}
+\beamer@subsectionintoc {3}{1}{Các khái niệm liên quan}{51}{0}{3}
+\beamer@subsectionintoc {3}{2}{Thuật toán tìm bao lồi - Quickhull}{55}{0}{3}
+\beamer@sectionintoc {4}{Thực nghiệm và kết quả}{58}{0}{4}
+\beamer@subsectionintoc {4}{1}{Môi trường}{59}{0}{4}

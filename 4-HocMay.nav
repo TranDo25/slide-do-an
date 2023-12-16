@@ -104,14 +104,12 @@
 \headcommand {\beamer@framepages {46}{46}}
 \headcommand {\slideentry {2}{1}{12}{47/47}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {47}{47}}
-\headcommand {\beamer@subsectionpages {36}{47}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{48}{Inner convex approximation}}
-\headcommand {\slideentry {2}{2}{1}{48/48}{Inner convex approximation}{0}}
+\headcommand {\slideentry {2}{1}{13}{48/48}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {48}{48}}
-\headcommand {\slideentry {2}{2}{2}{49/49}{Inner convex approximation}{0}}
+\headcommand {\slideentry {2}{1}{14}{49/49}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {49}{49}}
 \headcommand {\beamer@sectionpages {35}{49}}
-\headcommand {\beamer@subsectionpages {48}{49}}
+\headcommand {\beamer@subsectionpages {36}{49}}
 \headcommand {\sectionentry {3}{Thuật toán tính bao lồi trực giao}{50}{Thuật toán tính bao lồi trực giao}{0}}
 \headcommand {\slideentry {3}{0}{1}{50/50}{}{0}}
 \headcommand {\beamer@framepages {50}{50}}
@@ -142,8 +140,10 @@
 \headcommand {\beamer@subsectionentry {0}{4}{1}{59}{Môi trường}}
 \headcommand {\slideentry {4}{1}{1}{59/59}{Môi trường}{0}}
 \headcommand {\beamer@framepages {59}{59}}
-\headcommand {\beamer@partpages {1}{59}}
-\headcommand {\beamer@subsectionpages {59}{59}}
-\headcommand {\beamer@sectionpages {58}{59}}
-\headcommand {\beamer@documentpages {59}}
-\headcommand {\gdef \inserttotalframenumber {59}}
+\headcommand {\slideentry {4}{1}{2}{60/60}{Môi trường}{0}}
+\headcommand {\beamer@framepages {60}{60}}
+\headcommand {\beamer@partpages {1}{60}}
+\headcommand {\beamer@subsectionpages {59}{60}}
+\headcommand {\beamer@sectionpages {58}{60}}
+\headcommand {\beamer@documentpages {60}}
+\headcommand {\gdef \inserttotalframenumber {60}}

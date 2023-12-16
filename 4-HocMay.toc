@@ -4,7 +4,6 @@
 \beamer@subsectionintoc {1}{2}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{9}{0}{1}
 \beamer@sectionintoc {2}{Thuật toán tính bao lồi xấp xỉ}{35}{0}{2}
 \beamer@subsectionintoc {2}{1}{Outer convex approximation}{36}{0}{2}
-\beamer@subsectionintoc {2}{2}{Inner convex approximation}{48}{0}{2}
 \beamer@sectionintoc {3}{Thuật toán tính bao lồi trực giao}{50}{0}{3}
 \beamer@subsectionintoc {3}{1}{Các khái niệm liên quan}{51}{0}{3}
 \beamer@subsectionintoc {3}{2}{Thuật toán tìm bao lồi - Quickhull}{55}{0}{3}

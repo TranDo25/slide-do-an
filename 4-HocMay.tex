@@ -226,7 +226,6 @@
 	2. Thuật toán bao lồi xấp xỉ.
 	\begin{itemize}
 		\myitem Outer convex approximation.
-		\myitem Inner convex approximation. 
 	\end{itemize}
 	3. Thuật toán bao lồi trực giao. 
 	\begin{itemize}
@@ -387,7 +386,8 @@ Chia làm 2 hướng xử lý:
 	
 	\item[-]  Thuật toán tìm bao lồi trực giao - Orthogonal Quick Hull.
 	
-\end{itemize}	
+\end{itemize}
+Thuật toán sẽ áp dụng lên tập hợp 9 điểm đặc trưng, sao cho kết quả cuối cùng trả về một bao lồi bao quanh toàn bộ 9 điểm này.
 \end{frame}
 
 \begin{frame}{Định nghĩa công thức Convex Intersection over Union (CIoU)}
@@ -672,17 +672,45 @@ Tập P ban đầu chứa 4 đỉnh này:\\
 
 \begin{frame}
 	Tiếp theo ta thêm $d_p$ vào $D$ và thay thế $p \in P$ bởi $\hat p^+$ và $\hat p^+$:
-	
+	\begin{equation}\label{newDP1}
+		\begin{array}{lcl}
+			D &:=& D \cup \{d_{p}\}, \\
+			P &:=&(P \setminus \{p\}) \cup \{\hat p^-, \hat p^+\}.
+		\end{array}
+	\end{equation}
+	Lặp lại các bước tương tự, ta sẽ tìm được một bao lồi xấp xỉ của tập hợp các điểm.
 \end{frame}
 
-\begin{frame}{Thuật toán 2}
+\begin{frame}{Một vài kết quả của Outer Convex Approximation}
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=6cm]{./result_outer_cv_delta0.jpg}
+				\caption{Với n = 100, delta = 0.}
+				\label{result_outer_cv_delta0}
+			\end{center}
+		\end{figure}
+		
+\end{frame}
+\begin{frame}{Một vài kết quả của Outer Convex Approximation}
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=6cm]{./result_outer_cv_delta20.jpg}
+			\caption{Với n = 100, delta = 20.}
+			\label{result_outer_cv_delta20}
+		\end{center}
+	\end{figure}
 	
 \end{frame}
-\subsection{Inner convex approximation}
-\begin{frame}{Thuật toán 3}
-	
+\begin{frame}{Một vài kết quả của Outer Convex Approximation}
+	\begin{figure}
+		\begin{center}
+			\includegraphics[width=6cm]{./result_outer_cv_delta50.jpg}
+			\caption{Với n = 100, delta = 50.}
+			\label{result_outer_cv_delta50}
+		\end{center}
+	\end{figure}
+	s
 \end{frame}
-
 \section{Thuật toán tính bao lồi trực giao}
 \subsection{Các khái niệm liên quan}
 \begin{frame}{Bao lồi trực giao liên thông}
@@ -704,7 +732,8 @@ Tập P ban đầu chứa 4 đỉnh này:\\
 \end{frame}
 \section{Thực nghiệm và kết quả}
 \subsection{Môi trường}
-
-
+\begin{frame}{Thay thế bằng thuật toán Outer Convex Approximation}
+	\textbf{Thay cả 2 hàm Jarvis() và Jarvis\_and\_index(), sử dụng full dataset}
+\end{frame}
 
 \end{document}

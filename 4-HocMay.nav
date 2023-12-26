@@ -1,149 +1,139 @@
-\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@sectionpages {1}{0}}
+\headcommand {\beamer@subsectionpages {1}{0}}
+\headcommand {\sectionentry {1}{Giới thiệu bài toán}{1}{Giới thiệu bài toán}{0}}
+\headcommand {\slideentry {1}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
-\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{2}{Đặt vấn đề}}
+\headcommand {\slideentry {1}{1}{1}{2/2}{Đặt vấn đề}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\beamer@sectionpages {1}{2}}
-\headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Giới thiệu bài toán}{3}{Giới thiệu bài toán}{0}}
-\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
+\headcommand {\slideentry {1}{1}{2}{3/3}{Đặt vấn đề}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\beamer@subsectionpages {3}{3}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{Đặt vấn đề}}
-\headcommand {\slideentry {1}{1}{1}{4/4}{Đặt vấn đề}{0}}
+\headcommand {\slideentry {1}{1}{3}{4/4}{Đặt vấn đề}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\slideentry {1}{1}{2}{5/5}{Đặt vấn đề}{0}}
+\headcommand {\beamer@subsectionpages {2}{4}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{5}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}}
+\headcommand {\slideentry {1}{2}{1}{5/5}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {1}{1}{3}{6/6}{Đặt vấn đề}{0}}
+\headcommand {\slideentry {1}{2}{2}{6/6}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {1}{1}{4}{7/7}{Đặt vấn đề}{0}}
+\headcommand {\slideentry {1}{2}{3}{7/7}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {1}{1}{5}{8/8}{Đặt vấn đề}{0}}
+\headcommand {\slideentry {1}{2}{4}{8/8}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionpages {4}{8}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{9}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}}
-\headcommand {\slideentry {1}{2}{1}{9/9}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{5}{9/9}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {1}{2}{2}{10/10}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{6}{10/10}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {1}{2}{3}{11/11}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{7}{11/11}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {1}{2}{4}{12/12}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{8}{12/12}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {1}{2}{5}{13/13}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{9}{13/13}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {1}{2}{6}{14/14}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{10}{14/14}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {1}{2}{7}{15/15}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{11}{15/15}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {1}{2}{8}{16/16}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{12}{16/16}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {1}{2}{9}{17/17}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{13}{17/17}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {1}{2}{10}{18/18}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{14}{18/18}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {1}{2}{11}{19/19}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{15}{19/19}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {1}{2}{12}{20/20}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{16}{20/20}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {1}{2}{13}{21/21}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{17}{21/21}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {1}{2}{14}{22/22}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{18}{22/22}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {1}{2}{15}{23/23}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{19}{23/23}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\slideentry {1}{2}{16}{24/24}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{20}{24/24}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {1}{2}{17}{25/25}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{21}{25/25}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {25}{25}}
-\headcommand {\slideentry {1}{2}{18}{26/26}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{22}{26/26}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {26}{26}}
-\headcommand {\slideentry {1}{2}{19}{27/27}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{23}{27/27}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\slideentry {1}{2}{20}{28/28}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{24}{28/28}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\slideentry {1}{2}{21}{29/29}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {1}{2}{25}{29/29}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {1}{2}{22}{30/30}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\beamer@sectionpages {1}{29}}
+\headcommand {\beamer@subsectionpages {5}{29}}
+\headcommand {\sectionentry {2}{Thuật toán tính bao lồi xấp xỉ}{30}{Thuật toán tính bao lồi xấp xỉ}{0}}
+\headcommand {\slideentry {2}{0}{1}{30/30}{}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\slideentry {1}{2}{23}{31/31}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\beamer@subsectionpages {30}{30}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{31}{Outer convex approximation}}
+\headcommand {\slideentry {2}{1}{1}{31/31}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {1}{2}{24}{32/32}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {2}{1}{2}{32/32}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {1}{2}{25}{33/33}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {2}{1}{3}{33/33}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {33}{33}}
-\headcommand {\slideentry {1}{2}{26}{34/34}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{0}}
+\headcommand {\slideentry {2}{1}{4}{34/34}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\beamer@sectionpages {3}{34}}
-\headcommand {\beamer@subsectionpages {9}{34}}
-\headcommand {\sectionentry {2}{Thuật toán tính bao lồi xấp xỉ}{35}{Thuật toán tính bao lồi xấp xỉ}{0}}
-\headcommand {\slideentry {2}{0}{1}{35/35}{}{0}}
+\headcommand {\slideentry {2}{1}{5}{35/35}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\beamer@subsectionpages {35}{35}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{36}{Outer convex approximation}}
-\headcommand {\slideentry {2}{1}{1}{36/36}{Outer convex approximation}{0}}
+\headcommand {\slideentry {2}{1}{6}{36/36}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {2}{1}{2}{37/37}{Outer convex approximation}{0}}
+\headcommand {\slideentry {2}{1}{7}{37/37}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {2}{1}{3}{38/38}{Outer convex approximation}{0}}
+\headcommand {\slideentry {2}{1}{8}{38/38}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {2}{1}{4}{39/39}{Outer convex approximation}{0}}
+\headcommand {\slideentry {2}{1}{9}{39/39}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {2}{1}{5}{40/40}{Outer convex approximation}{0}}
+\headcommand {\slideentry {2}{1}{10}{40/40}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {2}{1}{6}{41/41}{Outer convex approximation}{0}}
+\headcommand {\slideentry {2}{1}{11}{41/41}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {2}{1}{7}{42/42}{Outer convex approximation}{0}}
+\headcommand {\slideentry {2}{1}{12}{42/42}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {2}{1}{8}{43/43}{Outer convex approximation}{0}}
+\headcommand {\slideentry {2}{1}{13}{43/43}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {2}{1}{9}{44/44}{Outer convex approximation}{0}}
+\headcommand {\slideentry {2}{1}{14}{44/44}{Outer convex approximation}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {2}{1}{10}{45/45}{Outer convex approximation}{0}}
+\headcommand {\beamer@sectionpages {30}{44}}
+\headcommand {\beamer@subsectionpages {31}{44}}
+\headcommand {\sectionentry {3}{Thuật toán tính bao lồi trực giao}{45}{Thuật toán tính bao lồi trực giao}{0}}
+\headcommand {\slideentry {3}{0}{1}{45/45}{}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\slideentry {2}{1}{11}{46/46}{Outer convex approximation}{0}}
+\headcommand {\beamer@subsectionpages {45}{45}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{46}{Các khái niệm liên quan}}
+\headcommand {\slideentry {3}{1}{1}{46/46}{Các khái niệm liên quan}{0}}
 \headcommand {\beamer@framepages {46}{46}}
-\headcommand {\slideentry {2}{1}{12}{47/47}{Outer convex approximation}{0}}
+\headcommand {\slideentry {3}{1}{2}{47/47}{Các khái niệm liên quan}{0}}
 \headcommand {\beamer@framepages {47}{47}}
-\headcommand {\slideentry {2}{1}{13}{48/48}{Outer convex approximation}{0}}
+\headcommand {\slideentry {3}{1}{3}{48/48}{Các khái niệm liên quan}{0}}
 \headcommand {\beamer@framepages {48}{48}}
-\headcommand {\slideentry {2}{1}{14}{49/49}{Outer convex approximation}{0}}
+\headcommand {\slideentry {3}{1}{4}{49/49}{Các khái niệm liên quan}{0}}
 \headcommand {\beamer@framepages {49}{49}}
-\headcommand {\beamer@sectionpages {35}{49}}
-\headcommand {\beamer@subsectionpages {36}{49}}
-\headcommand {\sectionentry {3}{Thuật toán tính bao lồi trực giao}{50}{Thuật toán tính bao lồi trực giao}{0}}
-\headcommand {\slideentry {3}{0}{1}{50/50}{}{0}}
+\headcommand {\beamer@subsectionpages {46}{49}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{50}{Thuật toán tìm bao lồi - Quickhull}}
+\headcommand {\slideentry {3}{2}{1}{50/50}{Thuật toán tìm bao lồi - Quickhull}{0}}
 \headcommand {\beamer@framepages {50}{50}}
-\headcommand {\beamer@subsectionpages {50}{50}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{51}{Các khái niệm liên quan}}
-\headcommand {\slideentry {3}{1}{1}{51/51}{Các khái niệm liên quan}{0}}
+\headcommand {\slideentry {3}{2}{2}{51/51}{Thuật toán tìm bao lồi - Quickhull}{0}}
 \headcommand {\beamer@framepages {51}{51}}
-\headcommand {\slideentry {3}{1}{2}{52/52}{Các khái niệm liên quan}{0}}
+\headcommand {\slideentry {3}{2}{3}{52/52}{Thuật toán tìm bao lồi - Quickhull}{0}}
 \headcommand {\beamer@framepages {52}{52}}
-\headcommand {\slideentry {3}{1}{3}{53/53}{Các khái niệm liên quan}{0}}
+\headcommand {\beamer@sectionpages {45}{52}}
+\headcommand {\beamer@subsectionpages {50}{52}}
+\headcommand {\sectionentry {4}{Thực nghiệm và kết quả}{53}{Thực nghiệm và kết quả}{0}}
+\headcommand {\slideentry {4}{0}{1}{53/53}{}{0}}
 \headcommand {\beamer@framepages {53}{53}}
-\headcommand {\slideentry {3}{1}{4}{54/54}{Các khái niệm liên quan}{0}}
+\headcommand {\beamer@subsectionpages {53}{53}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{54}{Môi trường}}
+\headcommand {\slideentry {4}{1}{1}{54/54}{Môi trường}{0}}
 \headcommand {\beamer@framepages {54}{54}}
-\headcommand {\beamer@subsectionpages {51}{54}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{55}{Thuật toán tìm bao lồi - Quickhull}}
-\headcommand {\slideentry {3}{2}{1}{55/55}{Thuật toán tìm bao lồi - Quickhull}{0}}
+\headcommand {\slideentry {4}{1}{2}{55/55}{Môi trường}{0}}
 \headcommand {\beamer@framepages {55}{55}}
-\headcommand {\slideentry {3}{2}{2}{56/56}{Thuật toán tìm bao lồi - Quickhull}{0}}
-\headcommand {\beamer@framepages {56}{56}}
-\headcommand {\slideentry {3}{2}{3}{57/57}{Thuật toán tìm bao lồi - Quickhull}{0}}
-\headcommand {\beamer@framepages {57}{57}}
-\headcommand {\beamer@sectionpages {50}{57}}
-\headcommand {\beamer@subsectionpages {55}{57}}
-\headcommand {\sectionentry {4}{Thực nghiệm và kết quả}{58}{Thực nghiệm và kết quả}{0}}
-\headcommand {\slideentry {4}{0}{1}{58/58}{}{0}}
-\headcommand {\beamer@framepages {58}{58}}
-\headcommand {\beamer@subsectionpages {58}{58}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{59}{Môi trường}}
-\headcommand {\slideentry {4}{1}{1}{59/59}{Môi trường}{0}}
-\headcommand {\beamer@framepages {59}{59}}
-\headcommand {\slideentry {4}{1}{2}{60/60}{Môi trường}{0}}
-\headcommand {\beamer@framepages {60}{60}}
-\headcommand {\beamer@partpages {1}{60}}
-\headcommand {\beamer@subsectionpages {59}{60}}
-\headcommand {\beamer@sectionpages {58}{60}}
-\headcommand {\beamer@documentpages {60}}
-\headcommand {\gdef \inserttotalframenumber {60}}
+\headcommand {\beamer@partpages {1}{55}}
+\headcommand {\beamer@subsectionpages {54}{55}}
+\headcommand {\beamer@sectionpages {53}{55}}
+\headcommand {\beamer@documentpages {55}}
+\headcommand {\gdef \inserttotalframenumber {55}}

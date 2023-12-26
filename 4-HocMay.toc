@@ -2,10 +2,10 @@
 \beamer@sectionintoc {1}{Giới thiệu bài toán}{1}{0}{1}
 \beamer@subsectionintoc {1}{1}{Đặt vấn đề}{2}{0}{1}
 \beamer@subsectionintoc {1}{2}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}{5}{0}{1}
-\beamer@sectionintoc {2}{Thuật toán tính bao lồi xấp xỉ}{30}{0}{2}
-\beamer@subsectionintoc {2}{1}{Outer convex approximation}{31}{0}{2}
-\beamer@sectionintoc {3}{Thuật toán tính bao lồi trực giao}{45}{0}{3}
-\beamer@subsectionintoc {3}{1}{Các khái niệm liên quan}{46}{0}{3}
-\beamer@subsectionintoc {3}{2}{Thuật toán tìm bao lồi - Quickhull}{50}{0}{3}
-\beamer@sectionintoc {4}{Thực nghiệm và kết quả}{53}{0}{4}
-\beamer@subsectionintoc {4}{1}{Môi trường}{54}{0}{4}
+\beamer@sectionintoc {2}{Thuật toán tính bao lồi xấp xỉ}{26}{0}{2}
+\beamer@subsectionintoc {2}{1}{Outer convex approximation}{27}{0}{2}
+\beamer@sectionintoc {3}{Thuật toán tính bao lồi trực giao}{41}{0}{3}
+\beamer@subsectionintoc {3}{1}{Các khái niệm liên quan}{42}{0}{3}
+\beamer@subsectionintoc {3}{2}{Thuật toán tìm bao lồi - Quickhull}{46}{0}{3}
+\beamer@sectionintoc {4}{Thực nghiệm và kết quả}{49}{0}{4}
+\beamer@subsectionintoc {4}{1}{Môi trường}{50}{0}{4}

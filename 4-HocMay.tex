@@ -356,13 +356,7 @@
 		
 	\end{frame}
 	
-	\begin{frame}
-		Nguyên tắc nhất quán đạo hàm yêu cầu: Đạo hàm $\frac{\partial \mathcal{L}_i^{+}(\theta)}{\partial \theta}$ của mỗi bao lồi dương phải có cùng hướng với tập bao lồi 
-		$\frac{\partial \mathcal{L}_{S_j}^{+}(\theta)}{\partial \theta}$.\\
-		Những bao lồi nào mà không có cùng hướng đạo hàm sẽ gây ra hiện tượng đặc trưng răng cưa (feature aliasing). \\
-		
-		Nếu $\frac{\partial\left(f\left(\mathcal{L}_i^{+}(\theta)\right) \mathcal{L}_i^{+}(\theta)\right)}{\partial\left(\mathcal{L}_i^{+}(\theta)\right)}$ mang dấu dương, thì $\mathcal{C}_i$ là bao lồi dương, và ngược lại.
-	\end{frame}
+
 	
 	\begin{frame}{Chiến lược phân đoạn tập các bao lồi}
 		
@@ -375,22 +369,12 @@
 		\end{figure}
 		
 	\end{frame}
-	
-	\begin{frame}
-		$f\left(\mathcal{L}_i^{+}(\theta)\right) \mathcal{L}_i^{+}(\theta)$ định nghĩa 1 đường cong lồi lên phía trên với 1 điểm cực tiểu. (Hình \ref{upper_convex_function})\\
-		Hàm	$\frac{\partial\left(f\left(\mathcal{L}_i^{+}(\theta)\right) \mathcal{L}_i^{+}(\theta)\right)}{\partial\left(\mathcal{L}_i^{+}(\theta)\right)}$ có một điểm 0 => các bao lồi được chia thành bao lồi âm và bao lồi dương nhờ điểm này.\\
-		
-	\end{frame}
 	\begin{frame}{Xử lý hiện tượng đặc trưng răng cưa}
 		Đưa ra công thức tính hệ số khử đặc trưng răng cưa:
 		\begin{align} \label{ptdd8}
 			p_i = \gamma \frac{CIoU (\mathcal{C}_i, \mathcal{B}_j)}{\sum_{m=1}^{M} CIoU (\mathcal{C}_i, \mathcal{B}_m)}
 		\end{align}
-		Trong đó $\gamma$ là hệ số chống hiện tượng "feature aliasing".\\
-		Nhân hệ số này với công thức \ref{pt11} sẽ được phương trình:
-		\begin{align} \label{pt13}
-			\mathcal{L}_{S_j}^+ (\theta) = \frac{1}{|S_j|} \sum_{i \in {S_j}} p_i f(\mathcal{L}_i^+(\theta)) \mathcal{L}_i^{+}(\theta) 
-		\end{align}
+	
 		
 		
 	\end{frame}
@@ -412,44 +396,23 @@
 	\section{Thuật toán tính bao lồi xấp xỉ}
 	\subsection{Outer convex approximation}
 	\begin{frame}{Thuật toán 1}
-		\textbf{Định nghĩa}: \\
-		Cho tập điểm x bất kỳ (các điểm không thẳng hàng với nhau) và một giá trị ngưỡng $\delta$,\\
-		cần tìm một bao lồi xấp xỉ của X sao cho $dist_H(conv, \mathcal{P}^{outer}) \leq \delta$.\\
+		Cho tập hợp các điểm trong không gian:
+			\begin{figure}
+		\begin{center}
+			\includegraphics[width=6cm]{./initial_sub_point.jpg}
+		\end{center}
+	\end{figure}
+	Cần tìm ra tứ giác bao quanh xấp xỉ các điểm này.
+	\end{frame}
+	\begin{frame}{Bắt đầu thuật toán}
+		Khởi tạo hình chữ nhật lớn nhất bao quanh các điểm.
+		\begin{figure}
 		
-	\end{frame}
-	\begin{frame}
-		Định nghĩa $\mathcal{P}^{outer}$: là tập các điểm x sao cho tích ma trận chuyển vị của x nhân với hướng d nhỏ hơn hoặc bằng ngưỡng $\beta_d$ tương ứng của d:
-		\begin{equation}
-			\mathcal{P}^{\text {outer }}:=\left\{x \in \mathbb{R}^2 \mid d x^T \leq \beta_d \text { for all } d \in D\right\}
-		\end{equation}
-		Ký hiệu P sẽ là tập đỉnh của $\mathcal{P}^{\text {outer}}$.
-	\end{frame}
-	\begin{frame}
-		\textbf{Bắt đầu thuật toán:}\\
-		Ta bắt đầu quy trình tìm kiếm với hình chữ nhật nhỏ nhất bao gồm các cạnh song song với các trục của đồ thị Oxy, có tập D là:\\
-		\begin{equation}\label{def_D1}
-			D := \{(1, 0),\ (0, 1),\ (-1, 0),\ (0, -1)\}
-		\end{equation}
-		Ngưỡng tương ứng của tập D:
-		\begin{equation}\label{def_beta1}
-			\begin{array}{lcl}
-				\beta_{(1, 0)} &:=& \max\{x^1 \mid (x^1, x^2) \in X\}, \\
-				\beta_{(0, 1)} &:=& \max\{x^2 \mid (x^1, x^2) \in X\}, \\
-				\beta_{(-1, 0)} &:=& \max\{-x^1 \mid (x^1, x^2) \in X\}, \\
-				\beta_{(0, -1)} &:=& \max\{-x^2 \mid (x^1, x^2) \in X\}.
-			\end{array}
-		\end{equation}
+			\includegraphics[width=6cm]{khoi_tao_hcn_bao_quanh}
+		\end{figure}
 	\end{frame}
 	\begin{frame}
 		Hình chữ nhật $\mathcal{P}^{outer}$ cấu tạo gồm 4 đỉnh như sau:
-		\begin{equation}\label{def_4r-1}
-			\begin{array}{lcl}
-				r_1 &:=& (\beta_{(1, 0)}, \beta_{(0, 1)}), \\
-				r_2 &:=& (\beta_{(-1, 0)}, \beta_{(0, 1)}), \\
-				r_3 &:=& (\beta_{(-1, 0)}, \beta_{(0, -1)}), \\
-				r_4 &:=& (\beta_{(1, 0)}, \beta_{(0, -1)}).
-			\end{array}
-		\end{equation}
 		Tập P ban đầu chứa 4 đỉnh này:\\
 		\begin{equation}\label{def_4r-2}
 			P := \{r_1,\ r_2,\ r_3,\ r_4\}

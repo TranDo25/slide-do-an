@@ -247,35 +247,32 @@
 	\end{frame}
 	\begin{frame}{2 giai đoạn thực hiện:}
 		\begin{itemize}
-			\item[-] tạo tập bao lồi và ước lượng sơ bộ bố cục của bao lồi.
+			\item[I.] Tạo và ước lượng bố cục bao lồi.
 			
-			\item[-] chỉnh sửa bao lồi sao cho phù hợp với các đối tượng phân bổ dày đặc.
+			\item[II.] Chỉnh sửa bao lồi để phù hợp với các đối tượng dày đặc.
 			
-		\end{itemize}
+		\end{itemize}	
 	\end{frame}
 	
 	
-	\begin{frame}{Giai đoạn 1}
-		Việc huấn luyện có thể xem như là quá trình dự đoán độ lệch (offset), trong
-		khi hệ số CIoU cần được tối đa hoá để đạt được so khớp tối ưu nhất.
-		\begin{align} \label{ptdd}
-			\widehat C_l (\theta) \gets \{(x_i^k + \Delta x_i^k, y_i^k + \Delta y_i^k )\}_i^{k=1,2,...,K}
-		\end{align}
-		trong đó $\theta$ là các tham số của mạng. Việc dự đoán offset sẽ thực
-		hiện theo công thức trên.
-	\end{frame}
+\begin{frame}{Giai đoạn I}
+	Dự đoán độ lệch:
+	\begin{align} \label{ptdd}
+		\widehat C_l (\theta) \gets \{(x_i^k + \Delta x_i^k, y_i^k + \Delta y_i^k )\}_i^{k=1,2,...,K}
+	\end{align}
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=8cm]{./feature_point_offset_prediction.jpg}
+	\end{center}
+\end{figure}
+\end{frame}
 	
 	\begin{frame}{Tích chập biến dạng}
-		Tích chập biến dạng (Deformable convolution - DCN) [2] là dạng tích chập
-		mà vị trí thực hiện tích chập bị biến dạng, không giống tích chập truyền thống
-		là dạng lưới NxN. Ưu điểm của phương pháp này giúp trích xuất các đặc trưng
-		mong muốn được chính xác hơn, lấy mẫu được ở những vị trí đa dạng hơn 
+		Hỗ trợ lấy mẫu ở những vị trí đa dạng hơn => làm giàu dữ liệu.
 		
 		\begin{figure}[ht!]
 			\begin{center}
 				\includegraphics[width=8cm]{./Hinh_6.jpg}
-				\caption{Sơ đồ phép chiếu để xác định kết quả sau phép tích chập.}
-				\label{fig_dhandang6 }
 			\end{center}
 		\end{figure}
 		
@@ -283,55 +280,40 @@
 	
 	
 	\begin{frame}{Thuật toán tìm bao lồi}
-		Chia làm 2 hướng xử lý:
+	
 		\begin{itemize}
-			\item[-] Thuật toán tìm bao lồi xấp xỉ - Outer Convex Approximation.
-			
+			\item[-] Thuật toán tìm bao lồi xấp xỉ -  Convex Approximation.
 			\item[-]  Thuật toán tìm bao lồi trực giao - Orthogonal Quick Hull.
 			
+			Tìm một bao lồi tối thiểu cho 9 điểm feature point offset.
+			
 		\end{itemize}
-		Thuật toán sẽ áp dụng lên tập hợp 9 điểm đặc trưng, sao cho kết quả cuối cùng trả về một bao lồi bao quanh toàn bộ 9 điểm này.
 	\end{frame}
 	
 	\begin{frame}{Định nghĩa công thức Convex Intersection over Union (CIoU)}
-		Dựa trên mỗi dự đoán bao lồi, có thể tính toán độ chênh lệch về vị trí và phân loại cho mỗi đối tượng. Giá trị CIoU giữa đối tượng thứ $i$ dự đoán convex-hull $C_i (\theta)$ và hộp thực $\mathcal{B}_j$ của đối tượng thứ $j$ được tính toán như sau:
-		\begin{align} \label{ptdd}
+		\begin{figure}[ht!]
+			\begin{center}
+				\includegraphics[width=8cm]{./feature_point_offset_prediction.jpg}
+			\end{center}
+		\end{figure}
+		\begin{align} 
 			CIoU_{(C_i (\theta), B_j)} (\theta) = \frac{|C_i(\theta) \cap B_j|}{|C_i(\theta) \cup B_j|} - \frac{|R_j \setminus (C_i(\theta) \cup B_j)|}{|R_j|}
 		\end{align}
-		- $R_j$: đa giác nhỏ nhất bao quanh cả hai $C_i(\theta)$ và $B_j$.\\
-		CIoU không chỉ có thể đại diện cho phần chống lấn không gian mà còn là hàm liên tục và có khả năng đạo hàm.
 	\end{frame}
 	
 	
 	\begin{frame}{Convex-Hull Localization Loss}
-		Chia làm hai hàm loss: Localization Loss và Classification Loss.\\
-		Có thể sử dụng chỉ số CIoU để làm hàm loss do tính chất tương tự 1 hàm loss.\\
-		Hàm loss localization được định nghĩa như sau:
 		\begin{align} \label{ptdd0}
 			\mathcal{L}_i^{loc} (\theta) = 1 - CIoU(C_i(\theta), B_j)
 		\end{align}
 		
 	\end{frame}
-	
-	
 	\begin{frame}{Convex-hull Classification Loss}
-		Gọi $f^k_i{(\theta)}$ là đặc trưng của điểm thứ k.\\
-		Bao lồi đặc trưng $f_i{(\theta)}$ được tính bằng tổng có trọng số của tất cả các đặc trưng các điểm nằm trên $\mathcal{C}_i{(\theta)}$:
-		\begin{align} \label{weight_sumation_of_all_feature_of_point}
-			f_i{(\theta)} = \sum_k w_i^k . f^k_i{(\theta)}
-		\end{align}
-		- $w_i^k$: trọng số đặc trưng học được từ DCN.
-		
-	\end{frame}
-	\begin{frame}{Convex-hull Classification Loss}
-		Dựa vào bao lồi đặc trưng, điểm dự đoán $\mathcal{S}_i{(\theta)}$ của $\mathcal{C}_i{(\theta)}$ được tính bằng phép tích chập.\\
-		Hàm loss tương ứng của $\mathcal{C}_i{(\theta)}$ tương ứng với vật thể $\mathcal{B}_j$ được định nghĩa:
-		
+	
 		\begin{align} \label{ptdd1}
 			\mathcal{L}	_i^{cls} (\theta) =FL(S_i(\theta), Y_j) 
 		\end{align}
-		- $Y_j$ ký hiệu nhãn nhị phân thật của vật thể.\\
-		- FL(.): Hàm Focal Loss.
+	
 	\end{frame}
 	\begin{frame}{Convex-hull Loss}
 		Hàm loss phân loại cho bao lồi dương:\\
@@ -344,59 +326,27 @@
 		\end{align}
 		
 	\end{frame}
-	\begin{frame}
-		Trong quá trình huấn luyện, bao lồi được sinh ra duy nhất bằng cách tối ưu hàm Localization loss:
-		
+	\begin{frame}{Tối ưu quá trình huấn luyện}
 		\begin{equation}
 			\mathcal{L}^{\text {det } 1}(\theta)=\frac{1}{J} \sum_i \mathbb{I}_{\left(x_i, y_i\right)} \mathcal{L}_i^{l o c}(\theta)
 		\end{equation}
-		
-		- $J$ ký hiệu số lượng của các đối tượng thật. \\
-		-  $\mathbb{I}_{\left(x_i, y_i\right)}$: một hàm chỉ thị cho việc liệu bao lồi thứ $i$ có liên quan trong quá trình tối ưu.
 	\end{frame}
 	\begin{frame}{Thích ứng bao lồi - Convex Hull Adaptation}
-		Dùng để thích ứng các đặc trưng đối với các đối tượng bố trí dày đặc => gây ra hiện tượng feature aliasing. \\
-		\textbf{Convex-Hull Set Construction}: Xây dựng một tập các bao lồi cho mỗi đối tượng,
-		để một đối tượng có thể khớp với nhiều Convex-hull, các bao lồi này sẽ cùng nhau tối ưu hóa các đặc trưng cho các đối tượng dày đặc.
-	\end{frame}
-	
-	\begin{frame}{Xây dựng tập các bao lồi}
+		Xử lý hiện tượng feature aliasing. \\
+		\textbf{Convex-Hull Set Construction}: Xây dựng một tập các bao lồi cho mỗi đối tượng.
 		\begin{figure}[ht!]
 			\begin{center}
 				\includegraphics[width=10cm]{./Hinh_8.jpg}
-				\caption{Xây dựng tập bao lồi (convex-hull)}
-				\label{fig_dhandang8 }
 			\end{center}
 		\end{figure}
-		
 	\end{frame}
 	
 	\begin{frame}{Xây dựng tập các bao lồi}
 		Tập các bao lồi dương($S_j$) được xây dựng bằng cách chọn ra $\text{top-I}$ bao lồi làm bao lồi dương, theo CIoU giữa các bao lồi và các hộp thật của đối tượng (grouth-truth).\\
 		Các bao lồi khác mà không thuộc đối tượng nào sẽ được gộp vào tập các bao lồi âm ($S_{\_}$).
 	\end{frame}
-	\begin{frame}{Xây dựng tập các bao lồi}
-		Ký hiệu tập các bao lồi cho đối tượng thứ $j$ là $S_j$. Hàm loss của $S_j$ được định 
-		nghĩa như sau:
-		\begin{align} \label{ptdd5}
-			\mathcal{L}_{S_j}^+ (\theta) = \frac{1}{|S_j|} \sum_{i \in {S_j}} w_i .	\mathcal{L}_i^{+}(\theta) 
-		\end{align}
-		
-		- $w_i$ biểu thị độ tin cậy của convex-hull thứ $i$, \\
-		- $\mathcal{L}_i^+(\theta)$ là giá trị loss dự đoán của bao lồi thứ $i$.
-		
-	\end{frame}
 	
-	\begin{frame}{Chiến lược chia tập các bao lồi}
-		Là một chiến lược đánh giá một cách linh hoạt các bao lồi để chọn ra đâu là bao lồi dương, đâu là bao lồi âm.\\
-		Đặt $w_i = f\left(\mathcal{L}_{i}^{+}({\theta})\right)$, có công thức sau: 
-		\begin{align} \label{pt11}
-			\mathcal{L}_{S_j}^+ (\theta) = \frac{1}{|S_j|} \sum_{i \in {S_j}} f(\mathcal{L}_i^+(\theta)) \mathcal{L}_i^{+}(\theta).
-		\end{align}
-		Với $f(x)$ là hàm đơn điệu giảm được định nghĩa trên hàm lỗi mật độ Gauss, cho rằng bao lồi nào có giá trị loss nhỏ hơn sẽ có độ tin cậy cao hơn: $f(x)=1.0-\frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} d t$.
-		
-		
-	\end{frame}
+	
 	
 	\begin{frame}{Chiến lược chia tập các bao lồi}
 		Cách chia tập các bao lồi được hướng dẫn bởi nguyên tắc nhất quán đạo hàm. Lấy đạo hàm của phương trình(\ref{pt11}), có đạo hàm của tập các bao lồi:
@@ -406,13 +356,7 @@
 		
 	\end{frame}
 	
-	\begin{frame}
-		Nguyên tắc nhất quán đạo hàm yêu cầu: Đạo hàm $\frac{\partial \mathcal{L}_i^{+}(\theta)}{\partial \theta}$ của mỗi bao lồi dương phải có cùng hướng với tập bao lồi 
-		$\frac{\partial \mathcal{L}_{S_j}^{+}(\theta)}{\partial \theta}$.\\
-		Những bao lồi nào mà không có cùng hướng đạo hàm sẽ gây ra hiện tượng đặc trưng răng cưa (feature aliasing). \\
-		
-		Nếu $\frac{\partial\left(f\left(\mathcal{L}_i^{+}(\theta)\right) \mathcal{L}_i^{+}(\theta)\right)}{\partial\left(\mathcal{L}_i^{+}(\theta)\right)}$ mang dấu dương, thì $\mathcal{C}_i$ là bao lồi dương, và ngược lại.
-	\end{frame}
+
 	
 	\begin{frame}{Chiến lược phân đoạn tập các bao lồi}
 		
@@ -425,22 +369,12 @@
 		\end{figure}
 		
 	\end{frame}
-	
-	\begin{frame}
-		$f\left(\mathcal{L}_i^{+}(\theta)\right) \mathcal{L}_i^{+}(\theta)$ định nghĩa 1 đường cong lồi lên phía trên với 1 điểm cực tiểu. (Hình \ref{upper_convex_function})\\
-		Hàm	$\frac{\partial\left(f\left(\mathcal{L}_i^{+}(\theta)\right) \mathcal{L}_i^{+}(\theta)\right)}{\partial\left(\mathcal{L}_i^{+}(\theta)\right)}$ có một điểm 0 => các bao lồi được chia thành bao lồi âm và bao lồi dương nhờ điểm này.\\
-		
-	\end{frame}
 	\begin{frame}{Xử lý hiện tượng đặc trưng răng cưa}
 		Đưa ra công thức tính hệ số khử đặc trưng răng cưa:
 		\begin{align} \label{ptdd8}
 			p_i = \gamma \frac{CIoU (\mathcal{C}_i, \mathcal{B}_j)}{\sum_{m=1}^{M} CIoU (\mathcal{C}_i, \mathcal{B}_m)}
 		\end{align}
-		Trong đó $\gamma$ là hệ số chống hiện tượng "feature aliasing".\\
-		Nhân hệ số này với công thức \ref{pt11} sẽ được phương trình:
-		\begin{align} \label{pt13}
-			\mathcal{L}_{S_j}^+ (\theta) = \frac{1}{|S_j|} \sum_{i \in {S_j}} p_i f(\mathcal{L}_i^+(\theta)) \mathcal{L}_i^{+}(\theta) 
-		\end{align}
+	
 		
 		
 	\end{frame}
@@ -462,44 +396,23 @@
 	\section{Thuật toán tính bao lồi xấp xỉ}
 	\subsection{Outer convex approximation}
 	\begin{frame}{Thuật toán 1}
-		\textbf{Định nghĩa}: \\
-		Cho tập điểm x bất kỳ (các điểm không thẳng hàng với nhau) và một giá trị ngưỡng $\delta$,\\
-		cần tìm một bao lồi xấp xỉ của X sao cho $dist_H(conv, \mathcal{P}^{outer}) \leq \delta$.\\
+		Cho tập hợp các điểm trong không gian:
+			\begin{figure}
+		\begin{center}
+			\includegraphics[width=6cm]{./initial_sub_point.jpg}
+		\end{center}
+	\end{figure}
+	Cần tìm ra tứ giác bao quanh xấp xỉ các điểm này.
+	\end{frame}
+	\begin{frame}{Bắt đầu thuật toán}
+		Khởi tạo hình chữ nhật lớn nhất bao quanh các điểm.
+		\begin{figure}
 		
-	\end{frame}
-	\begin{frame}
-		Định nghĩa $\mathcal{P}^{outer}$: là tập các điểm x sao cho tích ma trận chuyển vị của x nhân với hướng d nhỏ hơn hoặc bằng ngưỡng $\beta_d$ tương ứng của d:
-		\begin{equation}
-			\mathcal{P}^{\text {outer }}:=\left\{x \in \mathbb{R}^2 \mid d x^T \leq \beta_d \text { for all } d \in D\right\}
-		\end{equation}
-		Ký hiệu P sẽ là tập đỉnh của $\mathcal{P}^{\text {outer}}$.
-	\end{frame}
-	\begin{frame}
-		\textbf{Bắt đầu thuật toán:}\\
-		Ta bắt đầu quy trình tìm kiếm với hình chữ nhật nhỏ nhất bao gồm các cạnh song song với các trục của đồ thị Oxy, có tập D là:\\
-		\begin{equation}\label{def_D1}
-			D := \{(1, 0),\ (0, 1),\ (-1, 0),\ (0, -1)\}
-		\end{equation}
-		Ngưỡng tương ứng của tập D:
-		\begin{equation}\label{def_beta1}
-			\begin{array}{lcl}
-				\beta_{(1, 0)} &:=& \max\{x^1 \mid (x^1, x^2) \in X\}, \\
-				\beta_{(0, 1)} &:=& \max\{x^2 \mid (x^1, x^2) \in X\}, \\
-				\beta_{(-1, 0)} &:=& \max\{-x^1 \mid (x^1, x^2) \in X\}, \\
-				\beta_{(0, -1)} &:=& \max\{-x^2 \mid (x^1, x^2) \in X\}.
-			\end{array}
-		\end{equation}
+			\includegraphics[width=6cm]{khoi_tao_hcn_bao_quanh}
+		\end{figure}
 	\end{frame}
 	\begin{frame}
 		Hình chữ nhật $\mathcal{P}^{outer}$ cấu tạo gồm 4 đỉnh như sau:
-		\begin{equation}\label{def_4r-1}
-			\begin{array}{lcl}
-				r_1 &:=& (\beta_{(1, 0)}, \beta_{(0, 1)}), \\
-				r_2 &:=& (\beta_{(-1, 0)}, \beta_{(0, 1)}), \\
-				r_3 &:=& (\beta_{(-1, 0)}, \beta_{(0, -1)}), \\
-				r_4 &:=& (\beta_{(1, 0)}, \beta_{(0, -1)}).
-			\end{array}
-		\end{equation}
 		Tập P ban đầu chứa 4 đỉnh này:\\
 		\begin{equation}\label{def_4r-2}
 			P := \{r_1,\ r_2,\ r_3,\ r_4\}

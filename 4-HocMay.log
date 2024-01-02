@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.11)  27 DEC 2023 10:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.8)  2 JAN 2024 21:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1695,430 +1695,376 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
 (./4-HocMay.toc)
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
 [1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
- <./Figures/logoptit.png>] (./4-HocMay.toc)
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
+ <./Figures/logoptit.png>]
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
 [2
 
-]
-<reppoint_bouding_box.jpg, id=112, 136.76903pt x 145.3171pt>
-File: reppoint_bouding_box.jpg Graphic file (type jpg)
-<use reppoint_bouding_box.jpg>
-Package pdftex.def Info: reppoint_bouding_box.jpg  used on input line 204.
-(pdftex.def)             Requested size: 85.35826pt x 90.69434pt.
-<reception_field_w_aliasing.jpg, id=113, 156.97354pt x 147.64839pt>
-File: reception_field_w_aliasing.jpg Graphic file (type jpg)
-<use reception_field_w_aliasing.jpg>
-Package pdftex.def Info: reception_field_w_aliasing.jpg  used on input line 204
-.
-(pdftex.def)             Requested size: 85.35826pt x 80.28766pt.
-
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
+] (./4-HocMay.toc)
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
 [3
 
- <./reppoint_bouding_box.jpg> <./reception_field_w_aliasing.jpg>]
-<ConvexHull_Bouding_Box.jpg, id=121, 135.21484pt x 145.3171pt>
-File: ConvexHull_Bouding_Box.jpg Graphic file (type jpg)
-<use ConvexHull_Bouding_Box.jpg>
-Package pdftex.def Info: ConvexHull_Bouding_Box.jpg  used on input line 224.
-(pdftex.def)             Requested size: 85.35826pt x 91.7365pt.
-<reception_field_wo_aliasing.jpg, id=122, 157.75064pt x 143.76291pt>
-File: reception_field_wo_aliasing.jpg Graphic file (type jpg)
-<use reception_field_wo_aliasing.jpg>
-Package pdftex.def Info: reception_field_wo_aliasing.jpg  used on input line 22
-4.
-(pdftex.def)             Requested size: 85.35826pt x 77.78876pt.
-
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
+]
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
 [4
 
- <./ConvexHull_Bouding_Box.jpg> <./reception_field_wo_aliasing.jpg>]
-(./4-HocMay.toc)
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+<./initial_sub_point.jpg, id=127, 332.59741pt x 285.97162pt>
+File: ./initial_sub_point.jpg Graphic file (type jpg)
+<use ./initial_sub_point.jpg>
+Package pdftex.def Info: ./initial_sub_point.jpg  used on input line 219.
+(pdftex.def)             Requested size: 113.81102pt x 97.85304pt.
+
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
 [5
 
-]
-<./Hinh_1.jpg, id=147, 1790.69pt x 680.5425pt>
-File: ./Hinh_1.jpg Graphic file (type jpg)
-<use ./Hinh_1.jpg>
-Package pdftex.def Info: ./Hinh_1.jpg  used on input line 236.
-(pdftex.def)             Requested size: 284.52756pt x 108.13097pt.
+ <./initial_sub_point.jpg>]
+<khoi_tao_hcn_bao_quanh.png, id=137, 384.6872pt x 329.73187pt>
+File: khoi_tao_hcn_bao_quanh.png Graphic file (type png)
+<use khoi_tao_hcn_bao_quanh.png>
+Package pdftex.def Info: khoi_tao_hcn_bao_quanh.png  used on input line 226.
+(pdftex.def)             Requested size: 170.71652pt x 146.33022pt.
 
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
 [6
 
- <./Hinh_1.jpg>]
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
+ <./khoi_tao_hcn_bao_quanh.png>]
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
 [7
 
-{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
+]
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
 [8
+
+]
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[9
+
+]
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[10
+
+]
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[11
+
+]
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[12
+
+]
+<./result_outer_cv_delta0.jpg, id=205, 378.44614pt x 376.89194pt>
+File: ./result_outer_cv_delta0.jpg Graphic file (type jpg)
+<use ./result_outer_cv_delta0.jpg>
+Package pdftex.def Info: ./result_outer_cv_delta0.jpg  used on input line 315.
+(pdftex.def)             Requested size: 170.71652pt x 170.01385pt.
+
+Overfull \vbox (22.94923pt too high) detected at line 315
+ []
+
+
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[13
+
+ <./result_outer_cv_delta0.jpg>]
+<./result_outer_cv_delta20.jpg, id=215, 395.54225pt x 380.77742pt>
+File: ./result_outer_cv_delta20.jpg Graphic file (type jpg)
+<use ./result_outer_cv_delta20.jpg>
+Package pdftex.def Info: ./result_outer_cv_delta20.jpg  used on input line 325.
+
+(pdftex.def)             Requested size: 170.71652pt x 164.34697pt.
+
+Overfull \vbox (17.28235pt too high) detected at line 325
+ []
+
+
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[14
+
+ <./result_outer_cv_delta20.jpg>]
+<./result_outer_cv_delta50.jpg, id=224, 380.00032pt x 378.44614pt>
+File: ./result_outer_cv_delta50.jpg Graphic file (type jpg)
+<use ./result_outer_cv_delta50.jpg>
+Package pdftex.def Info: ./result_outer_cv_delta50.jpg  used on input line 335.
+
+(pdftex.def)             Requested size: 170.71652pt x 170.022pt.
+
+Overfull \vbox (36.55739pt too high) detected at line 335
+ []
+
+
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[15
+
+ <./result_outer_cv_delta50.jpg>] (./4-HocMay.toc)
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[16
+
+] (./4-HocMay.toc)
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
+
+
+[17
+
+] (./4-HocMay.toc)
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
+
+
+[18
+
+] (./4-HocMay.toc)
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
+
+
+[19
+
+] (./4-HocMay.toc)
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
+
+
+[20
+
+]
+<reppoint_bouding_box.jpg, id=320, 136.76903pt x 145.3171pt>
+File: reppoint_bouding_box.jpg Graphic file (type jpg)
+<use reppoint_bouding_box.jpg>
+Package pdftex.def Info: reppoint_bouding_box.jpg  used on input line 360.
+(pdftex.def)             Requested size: 85.35826pt x 90.69434pt.
+<reception_field_w_aliasing.jpg, id=321, 156.97354pt x 147.64839pt>
+File: reception_field_w_aliasing.jpg Graphic file (type jpg)
+<use reception_field_w_aliasing.jpg>
+Package pdftex.def Info: reception_field_w_aliasing.jpg  used on input line 360
+.
+(pdftex.def)             Requested size: 85.35826pt x 80.28766pt.
+
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
+
+
+[21
+
+ <./reppoint_bouding_box.jpg> <./reception_field_w_aliasing.jpg>]
+<ConvexHull_Bouding_Box.jpg, id=329, 135.21484pt x 145.3171pt>
+File: ConvexHull_Bouding_Box.jpg Graphic file (type jpg)
+<use ConvexHull_Bouding_Box.jpg>
+Package pdftex.def Info: ConvexHull_Bouding_Box.jpg  used on input line 380.
+(pdftex.def)             Requested size: 85.35826pt x 91.7365pt.
+<reception_field_wo_aliasing.jpg, id=330, 157.75064pt x 143.76291pt>
+File: reception_field_wo_aliasing.jpg Graphic file (type jpg)
+<use reception_field_wo_aliasing.jpg>
+Package pdftex.def Info: reception_field_wo_aliasing.jpg  used on input line 38
+0.
+(pdftex.def)             Requested size: 85.35826pt x 77.78876pt.
+
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
+
+
+[22
+
+ <./ConvexHull_Bouding_Box.jpg> <./reception_field_wo_aliasing.jpg>]
+(./4-HocMay.toc)
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
+
+
+[23
+
+]
+<./Hinh_1.jpg, id=355, 1790.69pt x 680.5425pt>
+File: ./Hinh_1.jpg Graphic file (type jpg)
+<use ./Hinh_1.jpg>
+Package pdftex.def Info: ./Hinh_1.jpg  used on input line 392.
+(pdftex.def)             Requested size: 284.52756pt x 108.13097pt.
+
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
+
+
+[24
+
+ <./Hinh_1.jpg>]
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
+
+
+[25
+
+]
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
+
+
+[26
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{ptdd}) has be
 en already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.268 \end{frame}
+l.424 \end{frame}
                  
-<./feature_point_offset_prediction.jpg, id=180, 355.13322pt x 134.43774pt>
+<./feature_point_offset_prediction.jpg, id=379, 355.13322pt x 134.43774pt>
 File: ./feature_point_offset_prediction.jpg Graphic file (type jpg)
 <use ./feature_point_offset_prediction.jpg>
 Package pdftex.def Info: ./feature_point_offset_prediction.jpg  used on input l
-ine 268.
+ine 424.
 (pdftex.def)             Requested size: 227.62204pt x 86.16908pt.
 
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[9
-
- <./feature_point_offset_prediction.jpg>]
-<./Hinh_6.jpg, id=189, 1240.635pt x 473.77pt>
-File: ./Hinh_6.jpg Graphic file (type jpg)
-<use ./Hinh_6.jpg>
-Package pdftex.def Info: ./Hinh_6.jpg  used on input line 279.
-(pdftex.def)             Requested size: 227.62204pt x 86.92316pt.
-
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[10
-
- <./Hinh_6.jpg>]
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[11
-
-]
-File: ./feature_point_offset_prediction.jpg Graphic file (type jpg)
-<use ./feature_point_offset_prediction.jpg>
-Package pdftex.def Info: ./feature_point_offset_prediction.jpg  used on input l
-ine 302.
-(pdftex.def)             Requested size: 227.62204pt x 86.16908pt.
-
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[12
-
-]
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[13
-
-]
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[14
-
-]
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[15
-
-]
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[16
-
-]
-<./Hinh_8.jpg, id=248, 1351.0475pt x 600.2425pt>
-File: ./Hinh_8.jpg Graphic file (type jpg)
-<use ./Hinh_8.jpg>
-Package pdftex.def Info: ./Hinh_8.jpg  used on input line 342.
-(pdftex.def)             Requested size: 284.52756pt x 126.40268pt.
-
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[17
-
- <./Hinh_8.jpg>]
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[18
-
-]
-
-LaTeX Warning: Reference `pt11' on page 19 undefined on input line 357.
-
-
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[19
-
-]
-<./Hinh_9.jpg, id=274, 508.22128pt x 274.31516pt>
-File: ./Hinh_9.jpg Graphic file (type jpg)
-<use ./Hinh_9.jpg>
-Package pdftex.def Info: ./Hinh_9.jpg  used on input line 371.
-(pdftex.def)             Requested size: 284.52756pt x 153.57356pt.
-
-Overfull \vbox (19.35034pt too high) detected at line 371
- []
-
-
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[20
-
- <./Hinh_9.jpg>]
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[21
-
-]
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[22
-
-]
-Overfull \vbox (1.57211pt too high) has occurred while \output is active []
-
-
-[23
-
-] (./4-HocMay.toc)
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
-
-
-[24
-
-] (./4-HocMay.toc)
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
-
-
-[25
-
-]
-<./initial_sub_point.jpg, id=342, 332.59741pt x 285.97162pt>
-File: ./initial_sub_point.jpg Graphic file (type jpg)
-<use ./initial_sub_point.jpg>
-Package pdftex.def Info: ./initial_sub_point.jpg  used on input line 406.
-(pdftex.def)             Requested size: 170.71652pt x 146.78175pt.
-
-Overfull \vbox (4.97736pt too high) detected at line 406
- []
-
-
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
-
-
-[26
-
- <./initial_sub_point.jpg>]
-<khoi_tao_hcn_bao_quanh.png, id=350, 384.6872pt x 329.73187pt>
-File: khoi_tao_hcn_bao_quanh.png Graphic file (type png)
-<use khoi_tao_hcn_bao_quanh.png>
-Package pdftex.def Info: khoi_tao_hcn_bao_quanh.png  used on input line 413.
-(pdftex.def)             Requested size: 170.71652pt x 146.33022pt.
-
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [27
 
- <./khoi_tao_hcn_bao_quanh.png>]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+ <./feature_point_offset_prediction.jpg>]
+<./Hinh_6.jpg, id=388, 1240.635pt x 473.77pt>
+File: ./Hinh_6.jpg Graphic file (type jpg)
+<use ./Hinh_6.jpg>
+Package pdftex.def Info: ./Hinh_6.jpg  used on input line 435.
+(pdftex.def)             Requested size: 227.62204pt x 86.92316pt.
+
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [28
 
-]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+ <./Hinh_6.jpg>]
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [29
 
 ]
-Overfull \hbox (0.47128pt too wide) detected at line 442
-[][][]\OMS/cmsy/m/n/10.95 k\OT1/mathkerncmss/m/sl/10.95 d[]\OMS/cmsy/m/n/10.95 
-k \OT1/cmss/m/n/10.95 = \OMS/cmsy/m/n/10.95 k\OT1/mathkerncmss/m/sl/10.95 p[] \
-OMS/cmsy/m/n/10.95 ^^@ \OT1/mathkerncmss/m/sl/10.95 p[]\OMS/cmsy/m/n/10.95 k[] 
-k\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 p[] \OMS/cmsy/m/n/10.95 ^^@ 
-\OT1/mathkerncmss/m/sl/10.95 p[]\OT1/cmss/m/n/10.95 )\OT1/mathkerncmss/m/sl/10.
-95 R[]\OMS/cmsy/m/n/10.95 k \OT1/cmss/m/n/10.95 = \OMS/cmsy/m/n/10.95 k\OT1/mat
-hkerncmss/m/sl/10.95 p[] \OMS/cmsy/m/n/10.95 ^^@ \OT1/mathkerncmss/m/sl/10.95 p
-[]\OMS/cmsy/m/n/10.95 k[] k\OT1/mathkerncmss/m/sl/10.95 p[] \OMS/cmsy/m/n/10.95
- ^^@ \OT1/mathkerncmss/m/sl/10.95 p[]\OMS/cmsy/m/n/10.95 k \OT1/cmss/m/n/10.95 
-= \T1/cmss/m/n/10.95 1\OML/cmm/m/it/10.95 :
- []
+File: ./feature_point_offset_prediction.jpg Graphic file (type jpg)
+<use ./feature_point_offset_prediction.jpg>
+Package pdftex.def Info: ./feature_point_offset_prediction.jpg  used on input l
+ine 458.
+(pdftex.def)             Requested size: 227.62204pt x 86.16908pt.
 
-
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [30
 
 ]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [31
 
 ]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [32
 
 ]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [33
 
 ]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [34
 
 ]
-<./result_outer_cv_delta0.jpg, id=425, 378.44614pt x 376.89194pt>
-File: ./result_outer_cv_delta0.jpg Graphic file (type jpg)
-<use ./result_outer_cv_delta0.jpg>
-Package pdftex.def Info: ./result_outer_cv_delta0.jpg  used on input line 509.
-(pdftex.def)             Requested size: 170.71652pt x 170.01385pt.
+<./Hinh_8.jpg, id=445, 1351.0475pt x 600.2425pt>
+File: ./Hinh_8.jpg Graphic file (type jpg)
+<use ./Hinh_8.jpg>
+Package pdftex.def Info: ./Hinh_8.jpg  used on input line 498.
+(pdftex.def)             Requested size: 284.52756pt x 126.40268pt.
 
-Overfull \vbox (22.94923pt too high) detected at line 509
- []
-
-
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [35
 
- <./result_outer_cv_delta0.jpg>]
-<./result_outer_cv_delta20.jpg, id=434, 395.54225pt x 380.77742pt>
-File: ./result_outer_cv_delta20.jpg Graphic file (type jpg)
-<use ./result_outer_cv_delta20.jpg>
-Package pdftex.def Info: ./result_outer_cv_delta20.jpg  used on input line 519.
-
-(pdftex.def)             Requested size: 170.71652pt x 164.34697pt.
-
-Overfull \vbox (17.28235pt too high) detected at line 519
- []
-
-
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+ <./Hinh_8.jpg>]
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [36
 
- <./result_outer_cv_delta20.jpg>]
-<./result_outer_cv_delta50.jpg, id=443, 380.00032pt x 378.44614pt>
-File: ./result_outer_cv_delta50.jpg Graphic file (type jpg)
-<use ./result_outer_cv_delta50.jpg>
-Package pdftex.def Info: ./result_outer_cv_delta50.jpg  used on input line 529.
+]
 
-(pdftex.def)             Requested size: 170.71652pt x 170.022pt.
-
-Overfull \vbox (36.55739pt too high) detected at line 529
- []
+LaTeX Warning: Reference `pt11' on page 37 undefined on input line 513.
 
 
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [37
 
- <./result_outer_cv_delta50.jpg>] (./4-HocMay.toc)
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+]
+<./Hinh_9.jpg, id=471, 508.22128pt x 274.31516pt>
+File: ./Hinh_9.jpg Graphic file (type jpg)
+<use ./Hinh_9.jpg>
+Package pdftex.def Info: ./Hinh_9.jpg  used on input line 527.
+(pdftex.def)             Requested size: 284.52756pt x 153.57356pt.
+
+Overfull \vbox (19.35034pt too high) detected at line 527
+ []
+
+
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [38
 
-] (./4-HocMay.toc)
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+ <./Hinh_9.jpg>]
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [39
 
 ]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [40
 
 ]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
 [41
 
-]
+] (./4-HocMay.toc)
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
 [42
-
-] (./4-HocMay.toc)
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
-
-
-[43
-
-]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
-
-
-[44
-
-]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
-
-
-[45
-
-] (./4-HocMay.toc)
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
-
-
-[46
-
-] (./4-HocMay.toc)
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
-
-
-[47
-
-]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
-
-
-[48
 
 ]
 \tf@nav=\write7
@@ -2138,16 +2084,16 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `4-HocMay.out' has not changed.
-(rerunfilecheck)             Checksum: 012E5920E2DAA7761C2F35670398CBA0;2142.
+(rerunfilecheck)             Checksum: 0372B90D2D0FEE5F935F7649401DBAC7;2292.
 Package logreq Info: Writing requests to '4-HocMay.run.xml'.
 \openout1 = `4-HocMay.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38531 strings out of 476025
- 750270 string characters out of 5794014
+ 38496 strings out of 476025
+ 749927 string characters out of 5794015
  1863382 words of memory out of 5000000
- 58118 multiletter control sequences out of 15000+600000
+ 58100 multiletter control sequences out of 15000+600000
  540445 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,122p,15147b,566s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2170,10 +2116,10 @@ fonts/type1/public/cm-super/sfss1095.pfb><c:/texlive/2023/texmf-dist/fonts/type
 1/vntex/vnr/vnss10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnss8.
 pfb><c:/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnss9.pfb><c:/texlive/202
 3/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb>
-Output written on 4-HocMay.pdf (48 pages, 751507 bytes).
+Output written on 4-HocMay.pdf (42 pages, 749521 bytes).
 PDF statistics:
- 686 PDF objects out of 1000 (max. 8388607)
- 568 compressed objects within 6 object streams
- 131 named destinations out of 1000 (max. 500000)
- 225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 624 PDF objects out of 1000 (max. 8388607)
+ 512 compressed objects within 6 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
 

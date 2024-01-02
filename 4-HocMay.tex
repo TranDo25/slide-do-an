@@ -183,8 +183,167 @@
 %		\titlepage{}
 %	}
 
-	\section{Giới thiệu bài toán}
-	\subsection{Đặt vấn đề}
+
+	\section{Thuật toán tính bao lồi xấp xỉ}
+
+	\begin{frame}{Giới thiệu chung}
+		Thuật toán xấp xỉ sử dụng khoảng cách Khoảng cách Hausdorff là một công cụ được dùng để tính toán khoảng cách giữa hai tập hợp bao lồi.
+		Thuật toán sử dụng tham số $\delta$ kết hợp để tuỳ chỉnh xấp xỉ bao lồi.(cái này để tự nói hơn)
+		
+	\end{frame}	
+		\subsection{Thuật toán xấp xỉ lồi ngoài}
+	\begin{frame}
+	Định nghĩa bao lồi xấp xỉ:
+	\begin{equation}
+		\mathcal{P}^{outer} := {x \in \mathbb{R}^2 \ | \ d x^T \leq \beta_d \text{ với tất cả } d \in D}
+		\end{equation}
+		
+	\end{frame}
+
+	
+	\begin{frame}{Khởi tạo ban đầu}
+		Cho tập hợp điểm không cùng nằm trên 1 đường thẳng:
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=4cm]{./initial_sub_point.jpg}
+			\end{center}
+		\end{figure}
+		\begin{center}
+			Đường thẳng $[x; x'] := {(1 - \lambda)x + \lambda x' | \lambda \in [0; 1]}$.\\
+		\end{center}
+		=> Cần tìm một bao lồi xấp xỉ của tập điểm này: $\mathcal{P}^{outer}$ sao cho: 
+		\begin{center}
+			$dist_H(conv X; P^{outer}) \leq \delta$
+		\end{center}
+		
+	\end{frame}
+	\begin{frame}{Bắt đầu thuật toán}
+		Khởi tạo hình chữ nhật lớn nhất bao quanh các điểm.
+		\begin{figure}
+			
+			\includegraphics[width=6cm]{khoi_tao_hcn_bao_quanh}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		Hình chữ nhật $\mathcal{P}^{outer}$ cấu tạo gồm 4 đỉnh như sau:
+		Tập P ban đầu chứa 4 đỉnh này:\\
+		\begin{equation}\label{def_4r-2}
+			P := \{r_1,\ r_2,\ r_3,\ r_4\}
+		\end{equation}
+	\end{frame}
+	\begin{frame}
+		Lấy 1 đỉnh $p \in P$.\\
+		 $p^{-}$ là điểm liền trước (ngược chiều kim đồng hồ) của $p$,\\
+		 $p^{+}$ là điểm liền sau của $p$,\\
+		 ta tính được:\\
+		\begin{equation}\label{def_d_p}
+			\begin{array}{lcl}
+				d_{p}^T &:=& \|p^+ - p^-\|^{-1}\, R \, (p^+ - p^-)^T, \\
+				\beta_{d_{p}} &:=& \max\{d_{p}\, x^T \mid x \in X\},
+			\end{array}
+		\end{equation}
+		Với $R$ là ma trận xoay 2 x 2 theo chiều kim đồng hồ.
+
+	\end{frame}
+	\begin{frame}
+		Xét biểu thức định nghĩa $\mathcal{P}^{outer}$:
+		\begin{equation}\label{pt15}
+			d_p\, x^T \leq \beta_{d_p}.
+		\end{equation}
+		Nếu:
+		\begin{equation}
+			\label{betaequal}
+			\beta_{d_p} = d_p\, p^+
+		\end{equation}
+		Thì ràng buộc (\ref{pt15}) sẽ không tạo đỉnh mới mà tạo thêm cạnh mới $[p^-, p^+]$ của $\mathcal{P}^{outer}$.\\ (đoạn này phải hỏi cô)
+		Cho $d_{[p^-, p]}$ và $d_{[p, p^+]}$ là hai hướng cực đại từ $D$ định nghĩa hai cạnh $[p^-, p]$ và $[p, p^+]$ của đa giác $\mathcal{P}^{outer}$. Tuy nhiên hai cạnh này mặc định có sẵn => hai hướng này không dùng nữa. (đoạn này có thể nói mồm được).
+		
+	\end{frame}
+	
+	\begin{frame}
+		Cần loại bỏ hai hướng $d_{[p^-, p]}$ và $d_{[p, p^+]}$ khỏi tập $D$ và đỉnh $p$ từ $P$:(chỗ này lôi từ trong tài liệu ra để nói).
+		\begin{equation}\label{newDP2}
+			\begin{array}{lcl}
+				D &:=& (D \cup \{d_{p}\})\setminus \{d_{[p^-,p]}, d_{[p,p^+]}\}, \\
+				P &:=& P \setminus \{p\}.
+			\end{array}
+		\end{equation}
+	\end{frame}
+	
+	\begin{frame}{Trường hợp 2}
+		 Nếu:
+		\begin{equation}\label{betagreater}
+			\beta_{d_p} > d_p\, p^+
+		\end{equation}
+		và:
+		\begin{equation}\label{greaterdelta}
+			d_{p}\, p^T - \beta_{d_{p}} > \delta
+		\end{equation}
+		=> ràng buộc (\ref{pt15}) tạo thêm 2 đỉnh mới $\hat p^-$ và $\hat p^+$:
+	
+			\begin{equation}\label{def_hatp}
+				\begin{array}{lcl}
+					\lambda_p &:=& (\beta_{d_p} - d_p\, p^{-T})/(d_p\, p^T - d_p\, p^{-T}) \in (0, 1), \\
+					\hat p^- &:=& (1 - \lambda_p)\, p^{-T} + \lambda_p\, p^T, \\
+					\hat p^+ &:=& (1 - \lambda_p)\, p^{+T} + \lambda_p\, p^T.
+				\end{array}
+			\end{equation}
+		
+	\end{frame}
+	
+	\begin{frame}
+		Thêm $d_p$ vào $D$, thay thế $p \in P$ bởi $\hat p^+$ và $\hat p^+$:
+		\begin{equation}\label{newDP1}
+			\begin{array}{lcl}
+				D &:=& D \cup \{d_{p}\}, \\
+				P &:=&(P \setminus \{p\}) \cup \{\hat p^-, \hat p^+\}.
+			\end{array}
+		\end{equation}
+		
+	\end{frame}
+	
+	\begin{frame}{Một vài kết quả của Outer Convex Approximation}
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=6cm]{./result_outer_cv_delta0.jpg}
+				\caption{Với n = 100, delta = 0.}
+				\label{result_outer_cv_delta0}
+			\end{center}
+		\end{figure}
+		
+	\end{frame}
+	\begin{frame}{Một vài kết quả của Outer Convex Approximation}
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=6cm]{./result_outer_cv_delta20.jpg}
+				\caption{Với n = 100, delta = 20.}
+				\label{result_outer_cv_delta20}
+			\end{center}
+		\end{figure}
+		
+	\end{frame}
+	\begin{frame}{Một vài kết quả của Outer Convex Approximation}
+		\begin{figure}
+			\begin{center}
+				\includegraphics[width=6cm]{./result_outer_cv_delta50.jpg}
+				\caption{Với n = 100, delta = 50.}
+				\label{result_outer_cv_delta50}
+			\end{center}
+		\end{figure}
+		s
+	\end{frame}
+	\subsection{Thuật toán bao lồi xấp xỉ trong}
+	
+	\begin{frame}
+		nội dung...
+	\end{frame}
+	\section{Ý tưởng thay thế thuật toán bao lồi xấp xỉ vào một bộ phát hiện}
+	\subsection{Giới thiệu chung}
+	
+	\subsection{Trình bày ý tưởng thay thế}
+	
+	\subsection{Một số kết quả}
+	
 	\begin{frame}{Đặt vấn đề}
 			Thách thức lớn: đặc trưng răng cưa (feature aliasing)
 			\begin{columns}[c] % Căn giữa các cột
@@ -391,165 +550,7 @@
 		\end{align}
 		
 	\end{frame}
+	\section{Một số kết quả thu được}
 	
-	
-	\section{Thuật toán tính bao lồi xấp xỉ}
-	\subsection{Outer convex approximation}
-	\begin{frame}{Thuật toán 1}
-		Cho tập hợp các điểm trong không gian:
-			\begin{figure}
-		\begin{center}
-			\includegraphics[width=6cm]{./initial_sub_point.jpg}
-		\end{center}
-	\end{figure}
-	Cần tìm ra tứ giác bao quanh xấp xỉ các điểm này.
-	\end{frame}
-	\begin{frame}{Bắt đầu thuật toán}
-		Khởi tạo hình chữ nhật lớn nhất bao quanh các điểm.
-		\begin{figure}
-		
-			\includegraphics[width=6cm]{khoi_tao_hcn_bao_quanh}
-		\end{figure}
-	\end{frame}
-	\begin{frame}
-		Hình chữ nhật $\mathcal{P}^{outer}$ cấu tạo gồm 4 đỉnh như sau:
-		Tập P ban đầu chứa 4 đỉnh này:\\
-		\begin{equation}\label{def_4r-2}
-			P := \{r_1,\ r_2,\ r_3,\ r_4\}
-		\end{equation}
-	\end{frame}
-	\begin{frame}
-		Lấy 1 đỉnh $p \in P$, có được $p^{-}$ là điểm liền trước (ngược chiều kim đồng hồ) của $p$, $p^{+}$ là điểm liền sau của $p$, ta tính được hướng $d_p$ của $p$ và ngưỡng $\beta_{dp}$:\\
-		\begin{equation}\label{def_d_p}
-			\begin{array}{lcl}
-				d_{p}^T &:=& \|p^+ - p^-\|^{-1}\, R \, (p^+ - p^-)^T, \\
-				\beta_{d_{p}} &:=& \max\{d_{p}\, x^T \mid x \in X\},
-			\end{array}
-		\end{equation}
-		trong đó: 
-		\begin{equation}\label{rotationmatrix}
-			R := \begin{pmatrix}
-				0 & 1 \\
-				-1 & 0
-			\end{pmatrix}
-		\end{equation}
-	\end{frame}
-	\begin{frame}
-		Vì R là ma trân xoay, thay vào công thức ngưỡng $d_p$ bên trên:
-		\begin{equation}\label{def_d_p1}
-			\|d_{p}\| = \|p^+ - p^-\|^{-1}\, \|(p^+ - p^-) R^T\| = \|p^+ - p^-\|^{-1}\, \|p^+ - p^-\| = 1.
-		\end{equation}
-	\end{frame}
-	
-	
-	\begin{frame}
-		Xét biểu thức định nghĩa $\mathcal{P}^{outer}$:
-		\begin{equation}\label{pt15}
-			d_p\, x^T \leq \beta_{d_p}.
-		\end{equation}
-		Trường hợp 1, nếu:
-		\begin{equation}
-			\label{betaequal}
-			\beta_{d_p} = d_p\, p^+
-		\end{equation}
-		Thì ràng buộc (\ref{pt15}) sẽ không tạo đỉnh mới mà tạo thêm cạnh mới $[p^-, p^+]$ của $\mathcal{P}^{outer}$.\\
-		Cho $d_{[p^-, p]}$ và $d_{[p, p^+]}$ là hai hướng cực đại từ $D$ định nghĩa hai cạnh $[p^-, p]$ và $[p, p^+]$ của đa giác $\mathcal{P}^{outer}$. Tuy nhiên hai cạnh này mặc định có sẵn => hai hướng trên trở nên thừa thãi. 
-		
-	\end{frame}
-	
-	\begin{frame}
-		Chính vì thế nên khi thêm $d_p$ vào tập $D$ ta cần loại bỏ hai hướng $d_{[p^-, p]}$ và $d_{[p, p^+]}$ khỏi tập $D$ và đỉnh $p$ từ $P$:
-		\begin{equation}\label{newDP2}
-			\begin{array}{lcl}
-				D &:=& (D \cup \{d_{p}\})\setminus \{d_{[p^-,p]}, d_{[p,p^+]}\}, \\
-				P &:=& P \setminus \{p\}.
-			\end{array}
-		\end{equation}
-	\end{frame}
-	
-	\begin{frame}
-		Xét trường hợp 2, nếu:
-		\begin{equation}\label{betagreater}
-			\beta_{d_p} > d_p\, p^+
-		\end{equation}
-		và:
-		\begin{equation}\label{greaterdelta}
-			d_{p}\, p^T - \beta_{d_{p}} > \delta
-		\end{equation}
-		thì ràng buộc (\ref{pt15}) tạo thêm 2 đỉnh mới cho đa giác là $\hat p^-$ và $\hat p^+$ và được tính toán bởi:
-		\begin{equation}\label{def_hatp}
-			\begin{array}{lcl}
-				\lambda_p &:=& (\beta_{d_p} - d_p\, p^{-T})/(d_p\, p^T - d_p\, p^{-T}) \in (0, 1), \\
-				\hat p^- &:=& (1 - \lambda_p)\, p^{-T} + \lambda_p\, p^T, \\
-				\hat p^+ &:=& (1 - \lambda_p)\, p^{+T} + \lambda_p\, p^T.
-			\end{array}
-		\end{equation}
-	\end{frame}
-	
-	\begin{frame}
-		Tiếp theo ta thêm $d_p$ vào $D$ và thay thế $p \in P$ bởi $\hat p^+$ và $\hat p^+$:
-		\begin{equation}\label{newDP1}
-			\begin{array}{lcl}
-				D &:=& D \cup \{d_{p}\}, \\
-				P &:=&(P \setminus \{p\}) \cup \{\hat p^-, \hat p^+\}.
-			\end{array}
-		\end{equation}
-		Lặp lại các bước tương tự, ta sẽ tìm được một bao lồi xấp xỉ của tập hợp các điểm.
-	\end{frame}
-	
-	\begin{frame}{Một vài kết quả của Outer Convex Approximation}
-		\begin{figure}
-			\begin{center}
-				\includegraphics[width=6cm]{./result_outer_cv_delta0.jpg}
-				\caption{Với n = 100, delta = 0.}
-				\label{result_outer_cv_delta0}
-			\end{center}
-		\end{figure}
-		
-	\end{frame}
-	\begin{frame}{Một vài kết quả của Outer Convex Approximation}
-		\begin{figure}
-			\begin{center}
-				\includegraphics[width=6cm]{./result_outer_cv_delta20.jpg}
-				\caption{Với n = 100, delta = 20.}
-				\label{result_outer_cv_delta20}
-			\end{center}
-		\end{figure}
-		
-	\end{frame}
-	\begin{frame}{Một vài kết quả của Outer Convex Approximation}
-		\begin{figure}
-			\begin{center}
-				\includegraphics[width=6cm]{./result_outer_cv_delta50.jpg}
-				\caption{Với n = 100, delta = 50.}
-				\label{result_outer_cv_delta50}
-			\end{center}
-		\end{figure}
-		s
-	\end{frame}
-	\section{Thuật toán tính bao lồi trực giao}
-	\subsection{Các khái niệm liên quan}
-	\begin{frame}{Bao lồi trực giao liên thông}
-		
-	\end{frame}
-	\begin{frame}{Tính chất của bao lồi trực giao liên thông}
-		
-	\end{frame}
-	\begin{frame}{Đường trực giao bên phải}
-		
-	\end{frame}
-	
-	\subsection{Thuật toán tìm bao lồi - Quickhull}
-	\begin{frame}{ Thuật toán Quickhull}
-		
-	\end{frame}
-	\begin{frame}{Tính đúng đắn và phức tạp của Quickhull}
-		
-	\end{frame}
-	\section{Thực nghiệm và kết quả}
-	\subsection{Môi trường}
-	\begin{frame}{Thay thế bằng thuật toán Outer Convex Approximation}
-		\textbf{Thay cả 2 hàm Jarvis() và Jarvis\_and\_index(), sử dụng full dataset}
-	\end{frame}
 	
 \end{document}

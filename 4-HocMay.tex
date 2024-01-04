@@ -553,7 +553,10 @@
 			p_i = \gamma \frac{CIoU (\mathcal{C}_i, \mathcal{B}_j)}{\sum_{m=1}^{M} CIoU (\mathcal{C}_i, \mathcal{B}_m)}
 		\end{align}
 	
-		
+		Nhân hệ số khử này vào hàm loss, ta có hàm loss giai đoạn 2:\\
+		\begin{equation}
+			\mathcal{L}_{s_j}^{+}(\theta)=\frac{1}{\left|S_j\right|} \sum_{i \in S_j} p_i f\left(\mathcal{L}_i^{+}(\theta)\right) \mathcal{L}_i^{+}(\theta)
+		\end{equation}
 		
 	\end{frame}
 	\begin{frame}{Hàm loss của bộ phát hiện CFA}

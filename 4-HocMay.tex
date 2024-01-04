@@ -553,14 +553,11 @@
 			p_i = \gamma \frac{CIoU (\mathcal{C}_i, \mathcal{B}_j)}{\sum_{m=1}^{M} CIoU (\mathcal{C}_i, \mathcal{B}_m)}
 		\end{align}
 	
+		Nhân hệ số khử này vào hàm loss, ta có hàm loss giai đoạn 2:\\
+		\begin{equation}
+			\mathcal{L}_{s_j}^{+}(\theta)=\frac{1}{\left|S_j\right|} \sum_{i \in S_j} p_i f\left(\mathcal{L}_i^{+}(\theta)\right) \mathcal{L}_i^{+}(\theta)
+		\end{equation}
 		
-		
-	\end{frame}
-	\begin{frame}{Tối ưu hàm loss giai đoạn 2}
-		Việc tối ưu của giai đoạn 2 được điều khiển bởi sự kết hợp cả hàm loss classification và localization định nghĩa trên tập các bao lồi:\\
-		\begin{align} \label{ptdd10}
-			\mathcal{L}^{det2} (\theta) = \frac{1}{J} \sum_{j=1}^{J} \frac{1}{|S_j|} \sum_{i \in {S_j}} p_i f(\mathcal{L}_i^+(\theta)) \mathcal{L}_i^{+}(\theta)  + \frac{1}{|S_-|} \sum_{i \in S} \mathcal{L}_i^- (\theta) 
-		\end{align}
 	\end{frame}
 	\begin{frame}{Hàm loss của bộ phát hiện CFA}
 		Là tổng hàm loss của cả hai giai đoạn:

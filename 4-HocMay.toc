@@ -1,9 +1,9 @@
 \babel@toc {vietnamese}{}\relax 
-\beamer@sectionintoc {1}{Thuật toán tính bao lồi xấp xỉ}{2}{0}{1}
-\beamer@subsectionintoc {1}{1}{Kiến thức ban đầu}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Thuật toán xấp xỉ lồi ngoài}{5}{0}{1}
-\beamer@subsectionintoc {1}{3}{Thuật toán bao lồi xấp xỉ trong}{14}{0}{1}
-\beamer@sectionintoc {2}{Ý tưởng thay thế thuật toán bao lồi xấp xỉ vào một bộ phát hiện}{23}{0}{2}
-\beamer@subsectionintoc {2}{1}{Giới thiệu chung}{24}{0}{2}
-\beamer@subsectionintoc {2}{2}{Ý tưởng thay thế bao lồi vào bộ phát hiện CFA}{27}{0}{2}
-\beamer@sectionintoc {3}{Một số kết quả thu được}{39}{0}{3}
+\beamer@sectionintoc {1}{Thuật toán tính bao lồi xấp xỉ}{1}{0}{1}
+\beamer@subsectionintoc {1}{1}{Kiến thức ban đầu}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{Thuật toán xấp xỉ lồi ngoài}{4}{0}{1}
+\beamer@subsectionintoc {1}{3}{Thuật toán bao lồi xấp xỉ trong}{13}{0}{1}
+\beamer@sectionintoc {2}{Ý tưởng thay thế thuật toán bao lồi xấp xỉ vào một bộ phát hiện}{22}{0}{2}
+\beamer@subsectionintoc {2}{1}{Giới thiệu chung}{23}{0}{2}
+\beamer@subsectionintoc {2}{2}{Ý tưởng thay thế bao lồi vào bộ phát hiện CFA}{26}{0}{2}
+\beamer@sectionintoc {3}{Một số kết quả thu được}{38}{0}{3}

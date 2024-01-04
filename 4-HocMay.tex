@@ -181,9 +181,9 @@
 \begin{document}
 
 % danh comment de tao trang bat dau
-	\frame[plain]{%
-			\titlepage{}
-		}
+%	\frame[plain]{%
+	%		\titlepage{}
+	%	}
 
 	\section{Thuật toán tính bao lồi xấp xỉ}
 	\subsection{Kiến thức ban đầu}
@@ -192,7 +192,7 @@
 		Thuật toán sử dụng tham số $\delta$ kết hợp để tuỳ chỉnh xấp xỉ bao lồi.(cái này để tự nói hơn).\\
 			Định nghĩa bao lồi xấp xỉ:
 		\begin{equation}
-			\mathcal{P}^{outer} := {x \in \mathbb{R}^2 \ | \ d x^T \leq \beta_d \text{ với tất cả } d \in D}
+			\mathcal{P}^{outer} := \{x \in \mathbb{R}^2 \ | \ d x^T \leq \beta_d \text{ với tất cả } d \in D\}
 		\end{equation}
 	\end{frame}	
 		\subsection{Thuật toán xấp xỉ lồi ngoài}
@@ -201,26 +201,25 @@
 
 	
 	\begin{frame}{Khởi tạo ban đầu}
-		Cho tập hợp điểm không cùng nằm trên 1 đường thẳng:
-		
-		\begin{center}
-			Đường thẳng $[x; x'] := \{(1 - \lambda)x + \lambda x' | \lambda \in [0; 1]\}$.\\
+			\begin{center}
+			Định nghĩa đường thẳng $[x; x'] := \{(1 - \lambda)x + \lambda x' | \lambda \in [0; 1]\}$.\\
 		\end{center}
+		Cho tập hợp điểm không cùng nằm trên 1 đường thẳng.
+		
+	
 		=> Cần tìm một bao lồi xấp xỉ lồi ngoài $\mathcal{P}^{outer}$ sao cho: 
 		\begin{center}
 			$dist_H(conv X; P^{outer}) \leq \delta$
 		\end{center}
-		\begin{figure}
 			\begin{center}
-				\includegraphics[width=4cm]{./initial_sub_point.jpg}
+				\includegraphics[width=4cm]{Figures/khoi_tao_tap_diem}
 			\end{center}
-		\end{figure}
 	\end{frame}
 	\begin{frame}{Bắt đầu thuật toán}
 		Khởi tạo hình chữ nhật lớn nhất bao quanh các điểm.
 		\begin{figure}
-			
-			\includegraphics[width=6cm]{khoi_tao_hcn_bao_quanh}
+			\label{fig:khoitaohcnbaoquanh}
+			\includegraphics[width=6cm]{Figures/khoi_tao_hcn_bao_quanh}
 		\end{figure}
 	\end{frame}
 	\begin{frame}
@@ -498,11 +497,9 @@
 	\begin{align} \label{ptdd}
 		\widehat C_l (\theta) \gets \{(x_i^k + \Delta x_i^k, y_i^k + \Delta y_i^k )\}_i^{k=1,2,...,K}
 	\end{align}
-\begin{figure}[ht!]
 	\begin{center}
-		\includegraphics[width=8cm]{./feature_point_offset_prediction.jpg}
+		\includegraphics[width=8cm]{Figures/feature_point_offset_prediction}
 	\end{center}
-\end{figure}
 \end{frame}
 \begin{frame}{Định nghĩa công thức Approximation Convex Intersection over Union (ACIoU)}
 		\begin{align} 
@@ -577,18 +574,18 @@
 		
 \begin{figure}
 	\centering
-	\includegraphics[width=1\linewidth]{convex_hull_evolution_during_training}
+	\includegraphics[width=1\linewidth]{Figures/convex_hull_evaluation_when_training}
 	\caption{Sự thay đổi của bao lồi trong quá trình huấn luyện.}
-	\label{fig:convexhullevolutionduringtraining}
+	\label{fig:convexhullevaluationwhentraining}
 \end{figure}
-	\end{frame}
+\end{frame}
 	\begin{frame}
-		\begin{figure}
-			\centering
-			\includegraphics[width=1\linewidth]{heat_map_comparision_of_CFA}
-			\caption{Biểu đồ nhiệt khi có thích ứng bao lồi (phải) và không có thích ứng bao lồi (trái).}
-			\label{fig:heatmapcomparisionofcfa}
-		\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{Figures/heat_map_comparision_of_CFA}
+	\caption{Biểu đồ nhiệt khi có thích ứng bao lồi (phải) và không có thích ứng bao lồi (trái).}
+	\label{fig:heatmapcomparisionofcfa}
+\end{figure}
 		
 	\end{frame}
 \begin{frame}{Một số kết quả thu được của CFA}

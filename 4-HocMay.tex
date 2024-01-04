@@ -179,43 +179,42 @@
 }
 
 \begin{document}
-%	\frame[plain]{%
-%		\titlepage{}
-%	}
 
+% danh comment de tao trang bat dau
+	\frame[plain]{%
+			\titlepage{}
+		}
 
 	\section{Thuật toán tính bao lồi xấp xỉ}
-
-	\begin{frame}{Giới thiệu chung}
-		Thuật toán xấp xỉ sử dụng khoảng cách Khoảng cách Hausdorff là một công cụ được dùng để tính toán khoảng cách giữa hai tập hợp bao lồi.
-		Thuật toán sử dụng tham số $\delta$ kết hợp để tuỳ chỉnh xấp xỉ bao lồi.(cái này để tự nói hơn)
-		
+	\subsection{Kiến thức ban đầu}
+	\begin{frame}{Giới thiệu}
+		Thuật toán xấp xỉ sử dụng khoảng cách Hausdorff là một công cụ được dùng để tính toán khoảng cách giữa hai tập hợp bao lồi.
+		Thuật toán sử dụng tham số $\delta$ kết hợp để tuỳ chỉnh xấp xỉ bao lồi.(cái này để tự nói hơn).\\
+			Định nghĩa bao lồi xấp xỉ:
+		\begin{equation}
+			\mathcal{P}^{outer} := {x \in \mathbb{R}^2 \ | \ d x^T \leq \beta_d \text{ với tất cả } d \in D}
+		\end{equation}
 	\end{frame}	
 		\subsection{Thuật toán xấp xỉ lồi ngoài}
-	\begin{frame}
-	Định nghĩa bao lồi xấp xỉ:
-	\begin{equation}
-		\mathcal{P}^{outer} := {x \in \mathbb{R}^2 \ | \ d x^T \leq \beta_d \text{ với tất cả } d \in D}
-		\end{equation}
-		
-	\end{frame}
+
+
 
 	
 	\begin{frame}{Khởi tạo ban đầu}
 		Cho tập hợp điểm không cùng nằm trên 1 đường thẳng:
+		
+		\begin{center}
+			Đường thẳng $[x; x'] := \{(1 - \lambda)x + \lambda x' | \lambda \in [0; 1]\}$.\\
+		\end{center}
+		=> Cần tìm một bao lồi xấp xỉ lồi ngoài $\mathcal{P}^{outer}$ sao cho: 
+		\begin{center}
+			$dist_H(conv X; P^{outer}) \leq \delta$
+		\end{center}
 		\begin{figure}
 			\begin{center}
 				\includegraphics[width=4cm]{./initial_sub_point.jpg}
 			\end{center}
 		\end{figure}
-		\begin{center}
-			Đường thẳng $[x; x'] := {(1 - \lambda)x + \lambda x' | \lambda \in [0; 1]}$.\\
-		\end{center}
-		=> Cần tìm một bao lồi xấp xỉ của tập điểm này: $\mathcal{P}^{outer}$ sao cho: 
-		\begin{center}
-			$dist_H(conv X; P^{outer}) \leq \delta$
-		\end{center}
-		
 	\end{frame}
 	\begin{frame}{Bắt đầu thuật toán}
 		Khởi tạo hình chữ nhật lớn nhất bao quanh các điểm.
@@ -230,11 +229,12 @@
 		\begin{equation}\label{def_4r-2}
 			P := \{r_1,\ r_2,\ r_3,\ r_4\}
 		\end{equation}
+			Lấy 1 đỉnh $p \in P$.\\
+		$p^{-}$ là điểm liền trước (ngược chiều kim đồng hồ) của $p$,\\
+		$p^{+}$ là điểm liền sau của $p$,\\
 	\end{frame}
 	\begin{frame}
-		Lấy 1 đỉnh $p \in P$.\\
-		 $p^{-}$ là điểm liền trước (ngược chiều kim đồng hồ) của $p$,\\
-		 $p^{+}$ là điểm liền sau của $p$,\\
+	
 		 ta tính được:\\
 		\begin{equation}\label{def_d_p}
 			\begin{array}{lcl}
@@ -242,34 +242,27 @@
 				\beta_{d_{p}} &:=& \max\{d_{p}\, x^T \mid x \in X\},
 			\end{array}
 		\end{equation}
-		Với $R$ là ma trận xoay 2 x 2 theo chiều kim đồng hồ.
-
-	\end{frame}
-	\begin{frame}
+		Với $R$ là ma trận xoay 2 x 2 theo chiều kim đồng hồ.\\
 		Xét biểu thức định nghĩa $\mathcal{P}^{outer}$:
 		\begin{equation}\label{pt15}
 			d_p\, x^T \leq \beta_{d_p}.
 		\end{equation}
+	\end{frame}
+	\begin{frame}{Trường hợp 1}
+		
 		Nếu:
 		\begin{equation}
 			\label{betaequal}
 			\beta_{d_p} = d_p\, p^+
 		\end{equation}
-		Thì ràng buộc (\ref{pt15}) sẽ không tạo đỉnh mới mà tạo thêm cạnh mới $[p^-, p^+]$ của $\mathcal{P}^{outer}$.\\ (đoạn này phải hỏi cô)
-		Cho $d_{[p^-, p]}$ và $d_{[p, p^+]}$ là hai hướng cực đại từ $D$ định nghĩa hai cạnh $[p^-, p]$ và $[p, p^+]$ của đa giác $\mathcal{P}^{outer}$. Tuy nhiên hai cạnh này mặc định có sẵn => hai hướng này không dùng nữa. (đoạn này có thể nói mồm được).
-		
-	\end{frame}
-	
-	\begin{frame}
-		Cần loại bỏ hai hướng $d_{[p^-, p]}$ và $d_{[p, p^+]}$ khỏi tập $D$ và đỉnh $p$ từ $P$:(chỗ này lôi từ trong tài liệu ra để nói).
-		\begin{equation}\label{newDP2}
+		Thì ràng buộc (\ref{pt15}) sẽ không tạo đỉnh mới mà tạo thêm cạnh mới $[p^-, p^+]$ của $\mathcal{P}^{outer}$.\textit{ (đoạn này phải hỏi cô)}Cho $d_{[p^-, p]}$ và $d_{[p, p^+]}$ là hai hướng cực đại từ $D$ định nghĩa hai cạnh $[p^-, p]$ và $[p, p^+]$ của đa giác $\mathcal{P}^{outer}$. Sau đó hai cạnh này trở nên thừa ra: (đoạn này có thể nói mồm được).
+			\begin{equation}\label{newDP2}
 			\begin{array}{lcl}
 				D &:=& (D \cup \{d_{p}\})\setminus \{d_{[p^-,p]}, d_{[p,p^+]}\}, \\
 				P &:=& P \setminus \{p\}.
 			\end{array}
 		\end{equation}
 	\end{frame}
-	
 	\begin{frame}{Trường hợp 2}
 		 Nếu:
 		\begin{equation}\label{betagreater}
@@ -302,49 +295,147 @@
 		
 	\end{frame}
 	
-	\begin{frame}{Một vài kết quả của Outer Convex Approximation}
-		\begin{figure}
-			\begin{center}
-				\includegraphics[width=6cm]{./result_outer_cv_delta0.jpg}
-				\caption{Với n = 100, delta = 0.}
-				\label{result_outer_cv_delta0}
-			\end{center}
-		\end{figure}
+\begin{frame}{Một vài kết quả của xấp xỉ lồi ngoài}
+	\begin{figure}[htbp]
+		\centering
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{outer_delta0}
 		
-	\end{frame}
-	\begin{frame}{Một vài kết quả của Outer Convex Approximation}
-		\begin{figure}
-			\begin{center}
-				\includegraphics[width=6cm]{./result_outer_cv_delta20.jpg}
-				\caption{Với n = 100, delta = 20.}
-				\label{result_outer_cv_delta20}
-			\end{center}
-		\end{figure}
+			\label{fig:outerdelta0}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{outer_delta2}
 		
-	\end{frame}
-	\begin{frame}{Một vài kết quả của Outer Convex Approximation}
-		\begin{figure}
-			\begin{center}
-				\includegraphics[width=6cm]{./result_outer_cv_delta50.jpg}
-				\caption{Với n = 100, delta = 50.}
-				\label{result_outer_cv_delta50}
-			\end{center}
-		\end{figure}
-		s
-	\end{frame}
+			\label{fig:outerdelta2}
+		\end{subfigure}
+		
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{outer_delta10}
+		
+			\label{fig:outerdelta10}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{outer_delta50}
+	
+			\label{fig:outerdelta50}
+		\end{subfigure}
+	\end{figure}
+\end{frame}
+
+	
+
 	\subsection{Thuật toán bao lồi xấp xỉ trong}
 	
-	\begin{frame}
-		nội dung...
+	\begin{frame}{Trình bày thuật toán}
+		Cho tập $X := {x_1, x_2, ..., x_n} \subset \mathbb{R}^2$
+		giả sử $x_1, x_2, ..., x_n$ không cùng nằm trên 1 đường thẳng.\\
+		Cần tìm một bao lồi xấp xỉ trong của $\mathcal{P}^{inner}$:
+		\begin{equation}\label{ct2.37}
+			{\cal P}^{\rm inner} := \ conv \ X', \ \mbox{ với } X' \subset X,
+		\end{equation}
 	\end{frame}
+	\begin{frame}{Xấp xỉ lồi trong}
+		Xét hai công thức:\\
+		\begin{equation}\label{ct2.40}
+			\begin{array}{lcl}
+				X' &:=& \{\bar q_1, \bar q_2, \bar q_3, \bar q_4\}, \\
+				E &:=& \{[\bar q_1, \bar q_2], \, [\bar q_2, \bar q_3], \, [\bar q_3, \bar q_4], \, [\bar q_4, \bar q_1]\},
+			\end{array}
+		\end{equation}
+		"$\bar q_1 \text{: điểm có giá trị y lớn nhất trong tập các điểm có x lớn nhất}$",
+		"$\bar q_2 \text{: điểm có giá trị x nhỏ nhất trong tập các điểm có y lớn nhất}$",
+		"$\bar q_3 \text{: điểm có giá trị y nhỏ nhất trong tập các điểm có x nhỏ nhất}$",
+		"$\bar q_4 \text{: điểm có giá trị x lớn nhất trong tập các điểm có y nhỏ nhất}$",
+	\end{frame}
+	\begin{frame}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\linewidth]{initial_polygon_inner}
+			\caption{Tứ giác khởi tạo ban đầu xấp xỉ lồi trong.}
+			\label{fig:initialpolygoninner}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		Xét cạnh bất kỳ $[p, p^+] \in E$ ($p \not= p^+$), xác định:
+		\begin{equation}\label{ct2.44}
+			\begin{array}{lcl}
+				\bar d_{[p, p^+]}^{\, T} &:=& \|p^+ - p\|^{-1} R \, (p^+ - p)^T, \\
+				X_{[p, p^+]} &:=& \{x \in X \mid \bar d_{[p, p^+]}\, x^T > \bar d_{[p, p^+]}\, p^T \},
+			\end{array}
+		\end{equation}
+		Với $R$ là ma trận xoay ngược chiều theo hướng kim đồng hồ.\\
+		 Chú ý rằng, ma trận xoay trong thuật toán tìm bao lồi xấp xỉ trong ngược với ma trận xoay ở thuật toán tìm bao lồi xấp xỉ ngoài. 
+	\end{frame}
+	\begin{frame}
+		Nếu $X_{[p, p^+]} \not= \emptyset$ thì xác định:
+		\begin{equation}\label{ct2.45}
+			\begin{array}{lcl}
+				\beta_{[p, p^+]} &:=& \max \{\bar d_{[p, p^+]}\, x^T \mid x \in X_{[p, p^+]}\}, \\
+				B_{[p, p^+]} &:=& \{x \in X_{[p, p^+]} \mid \bar d_{[p, p^+]}\, x^T = \beta_{[p, p^+]}\}.
+			\end{array}
+		\end{equation}
+			Nếu:
+		\begin{equation}\label{dct2.46}
+			\beta_{[p, p^+]} - \bar d_{[p, p^+]}\, p^T \leq \delta
+		\end{equation}
+		Thì không cần phải mở rộng ${\cal P}^{\rm inner }$ theo hướng $\bar d_{[p, p^+]}$ nữa.
+	\end{frame}
+	\begin{frame}
+	Ngược lại, nếu:
+	\begin{equation}\label{ct2.47}
+		\beta_{[p, p^+]} - \bar d_{[p, p^+]}\, p^T > \delta
+	\end{equation}
+	thì xác định điểm:
+	\begin{equation}\label{ct2.48}
+		\hat p \in B_{[p, p^+]} \hbox{ thỏa mãn } \|\hat p - p\| = \max\{\|x - p\| \mid x \in B_{[p, p^+]}\},
+	\end{equation}
+		Và cập nhật $X'$ và $B$ bởi
+	\begin{equation}\label{ct2.49}
+		\begin{array}{lcl}
+			X' &:=& X' \cup \{\hat p\}, \\
+			E &:=& E \cup \{[p, \hat p], \, [\hat p, p^+]\},
+		\end{array}
+	\end{equation}
+	\end{frame}
+
+	\begin{frame}
+	Và xác định: 
+	\begin{equation}\label{ct2.50}
+		\begin{array}{lcl}
+			X_{[p, \hat p]} &:=& \{x \in X_{[p, p^+]} \mid \bar d_{[p, \hat p]}\, x^T > \bar d_{[p, \hat p]}\, p^T \}, \\
+			X_{[\hat p, p^+]} &:=& \{x \in X_{[p, p^+]} \mid \bar d_{[\hat p, p^+]}\, x^T > \bar d_{[\hat p, p^T]}\, {\hat p}^T \}.
+		\end{array}
+	\end{equation}
+	\end{frame}
+\begin{frame}
+	\begin{figure}[htbp]
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{inner_delta0}
+			\label{fig:inner_delta0}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{inner_delta2}
+			\label{fig:inner_delta2}
+		\end{subfigure}
+		
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{inner_delta10}
+			\label{fig:inner_delta10}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{inner_delta50}
+			\label{fig:inner_delta50}
+		\end{subfigure}
+	\end{figure}
+\end{frame}
+
 	\section{Ý tưởng thay thế thuật toán bao lồi xấp xỉ vào một bộ phát hiện}
 	\subsection{Giới thiệu chung}
-	
-	\subsection{Trình bày ý tưởng thay thế}
-	
-	\subsection{Một số kết quả}
-	
-	\begin{frame}{Đặt vấn đề}
+	\begin{frame}{Giới thiệu chung}
 			Thách thức lớn: đặc trưng răng cưa (feature aliasing)
 			\begin{columns}[c] % Căn giữa các cột
 			\column{.5\textwidth} % Cột 1 chiếm 50% của khung
@@ -361,9 +452,7 @@
 			\end{figure}
 		\end{columns}
 	\end{frame}
-	
-	
-	\begin{frame} {Giải quyết vấn đề}
+		\begin{frame}{Giới thiệu chung}
 		Sử dụng bao lồi làm biểu diễn bounding box.
 		\begin{columns}[c] % Căn giữa các cột
 			\column{.5\textwidth} % Cột 1 chiếm 50% của khung
@@ -381,12 +470,11 @@
 			\end{figure}
 		\end{columns}
 	\end{frame}
-	\subsection{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}
-	
-	\begin{frame}{Phương pháp thích ứng bao lồi (convex-hull feature adaptation-CFA)}
+	\subsection{Ý tưởng thay thế bao lồi vào bộ phát hiện CFA}
+	\begin{frame}{Phương pháp thích ứng bao lồi xấp xỉ (Approximation convex-hull feature adaptation-ACFA)}
 	 
-	 Giới hạn phạm vi đối tượng sử dụng chỉ số CIoU.\\
-	 Phân chia tập bao lồi thành bao lồi âm và bao lồi dương.
+	 Giới hạn phạm vi đối tượng sử dụng chỉ số ACIoU.\\
+	 Phân chia tập bao lồi thành bao lồi xấp xỉ âm và dương.
 		\begin{figure}[htp]
 			\begin{center}
 				\includegraphics[width=10cm]{./Hinh_1.jpg}
@@ -394,26 +482,17 @@
 		\end{figure}
 	\end{frame}
 	\begin{frame}{Xây dựng tập bao lồi}
-		
-		Phương pháp CFA đã đề xuất biểu diễn phạm
+		Phương pháp ACFA đã đề xuất biểu diễn phạm
 		vi của đối tượng bằng bao lồi:\\
 		\begin{align} \label{ptdd}
 			C_i = \{(x_i^k, y_i^k )\}_i^{k=1,2,...,K}
 		\end{align}
-		
-	
-		
-	\end{frame}
-	\begin{frame}{2 giai đoạn thực hiện:}
-		\begin{itemize}
+		Phương pháp gồm 2 giai đoạn thực hiện:
+			\begin{itemize}
 			\item[I.] Tạo và ước lượng bố cục bao lồi.
-			
 			\item[II.] Chỉnh sửa bao lồi để phù hợp với các đối tượng dày đặc.
-			
 		\end{itemize}	
 	\end{frame}
-	
-	
 \begin{frame}{Giai đoạn I}
 	Dự đoán độ lệch:
 	\begin{align} \label{ptdd}
@@ -425,59 +504,19 @@
 	\end{center}
 \end{figure}
 \end{frame}
-	
-	\begin{frame}{Tích chập biến dạng}
-		Hỗ trợ lấy mẫu ở những vị trí đa dạng hơn => làm giàu dữ liệu.
-		
-		\begin{figure}[ht!]
-			\begin{center}
-				\includegraphics[width=8cm]{./Hinh_6.jpg}
-			\end{center}
-		\end{figure}
-		
-	\end{frame}
-	
-	
-	\begin{frame}{Thuật toán tìm bao lồi}
-	
-		\begin{itemize}
-			\item[-] Thuật toán tìm bao lồi xấp xỉ -  Convex Approximation.
-			\item[-]  Thuật toán tìm bao lồi trực giao - Orthogonal Quick Hull.
-			
-			Tìm một bao lồi tối thiểu cho 9 điểm feature point offset.
-			
-		\end{itemize}
-	\end{frame}
-	
-	\begin{frame}{Định nghĩa công thức Convex Intersection over Union (CIoU)}
-		\begin{figure}[ht!]
-			\begin{center}
-				\includegraphics[width=8cm]{./feature_point_offset_prediction.jpg}
-			\end{center}
-		\end{figure}
+\begin{frame}{Định nghĩa công thức Approximation Convex Intersection over Union (ACIoU)}
 		\begin{align} 
-			CIoU_{(C_i (\theta), B_j)} (\theta) = \frac{|C_i(\theta) \cap B_j|}{|C_i(\theta) \cup B_j|} - \frac{|R_j \setminus (C_i(\theta) \cup B_j)|}{|R_j|}
-		\end{align}
-	\end{frame}
-	
-	
-	\begin{frame}{Convex-Hull Localization Loss}
+			ACIoU_{(C_i (\theta), B_j)} (\theta) = \frac{|C_i(\theta) \cap B_j|}{|C_i(\theta) \cup B_j|} - \frac{|R_j \setminus (C_i(\theta) \cup B_j)|}{|R_j|}
+		\end{align}	
+		Hàm loss định vị (localization loss):
 		\begin{align} \label{ptdd0}
-			\mathcal{L}_i^{loc} (\theta) = 1 - CIoU(C_i(\theta), B_j)
+			\mathcal{L}_i^{loc} (\theta) = 1 - ACIoU(C_i(\theta), B_j)
 		\end{align}
-		
-	\end{frame}
-	\begin{frame}{Convex-hull Classification Loss}
-	
-		\begin{align} \label{ptdd1}
-			\mathcal{L}	_i^{cls} (\theta) =FL(S_i(\theta), Y_j) 
-		\end{align}
-	
-	\end{frame}
-	\begin{frame}{Convex-hull Loss}
-		Hàm loss phân loại cho bao lồi dương:\\
+\end{frame}
+	\begin{frame}
+		Hàm loss phân loại (classification loss) cho bao lồi dương:\\
 		\begin{align} \label{ptdd2}
-			\mathcal{L}^+ (\theta) = 	\mathcal{L}_i^{cls}(S_i(\theta), Y_j) +\lambda 	\mathcal{L}_i^{loc}(C_i(\theta), B_j)
+			\mathcal{L}^+ (\theta) = \mathcal{L}_i^{cls}(S_i(\theta), Y_j) +\lambda 	\mathcal{L}_i^{loc}(C_i(\theta), B_j)
 		\end{align}
 		Hàm loss phân loại cho bao lồi âm:\\
 		\begin{align} \label{ptdd3}
@@ -485,14 +524,9 @@
 		\end{align}
 		
 	\end{frame}
-	\begin{frame}{Tối ưu quá trình huấn luyện}
-		\begin{equation}
-			\mathcal{L}^{\text {det } 1}(\theta)=\frac{1}{J} \sum_i \mathbb{I}_{\left(x_i, y_i\right)} \mathcal{L}_i^{l o c}(\theta)
-		\end{equation}
-	\end{frame}
-	\begin{frame}{Thích ứng bao lồi - Convex Hull Adaptation}
+	\begin{frame}{Thích ứng bao lồi - Approximation Convex Hull Adaptation}
 		Xử lý hiện tượng feature aliasing. \\
-		\textbf{Convex-Hull Set Construction}: Xây dựng một tập các bao lồi cho mỗi đối tượng.
+		\textbf{Convex-Hull Set Construction}: Xây dựng một tập các bao lồi xấp xỉ cho mỗi đối tượng.
 		\begin{figure}[ht!]
 			\begin{center}
 				\includegraphics[width=10cm]{./Hinh_8.jpg}
@@ -500,25 +534,14 @@
 		\end{figure}
 	\end{frame}
 	
-	\begin{frame}{Xây dựng tập các bao lồi}
-		Tập các bao lồi dương($S_j$) được xây dựng bằng cách chọn ra $\text{top-I}$ bao lồi làm bao lồi dương, theo CIoU giữa các bao lồi và các hộp thật của đối tượng (grouth-truth).\\
-		Các bao lồi khác mà không thuộc đối tượng nào sẽ được gộp vào tập các bao lồi âm ($S_{\_}$).
-	\end{frame}
-	
-	
-	
-	\begin{frame}{Chiến lược chia tập các bao lồi}
-		Cách chia tập các bao lồi được hướng dẫn bởi nguyên tắc nhất quán đạo hàm. Lấy đạo hàm của phương trình(\ref{pt11}), có đạo hàm của tập các bao lồi:
+	\begin{frame}{Xây dựng tập các bao lồi xấp xỉ}
+		Tập các bao lồi xấp xỉ dương($S_j$) được xây dựng bằng cách chọn ra \textit{top-I} bao lồi xấp xỉ làm bao lồi xấp xỉ dương, theo ACIoU giữa các bao lồi dự đoán và bao lồi chính xác của đối tượng (grouth-truth).\\
+			Cách chia tập các bao lồi được hướng dẫn bởi nguyên tắc nhất quán đạo hàm.
 		\begin{align} \label{ptdd7}
 			\frac{\partial\mathcal{L}_{S_j}^+ (\theta)}{\partial (\theta)} = \frac{1}{|S_j|} \sum_{i \in {S_j}} \frac{\partial (f(\mathcal{L}_i^+(\theta))\mathcal{L}_i^{+}(\theta))}{\partial (\mathcal{L}_i^+(\theta))} \frac{\partial \mathcal{L}_i^+ (\theta)}{\partial (\theta)}
 		\end{align}
-		
 	\end{frame}
-	
-
-	
 	\begin{frame}{Chiến lược phân đoạn tập các bao lồi}
-		
 		\begin{figure}[ht!]
 			\begin{center}
 				\includegraphics[width=10cm]{./Hinh_9.jpg}
@@ -526,7 +549,6 @@
 				\label{upper_convex_function}
 			\end{center}
 		\end{figure}
-		
 	\end{frame}
 	\begin{frame}{Xử lý hiện tượng đặc trưng răng cưa}
 		Đưa ra công thức tính hệ số khử đặc trưng răng cưa:
@@ -551,6 +573,55 @@
 		
 	\end{frame}
 	\section{Một số kết quả thu được}
+	\begin{frame}
+		
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{convex_hull_evolution_during_training}
+	\caption{Sự thay đổi của bao lồi trong quá trình huấn luyện.}
+	\label{fig:convexhullevolutionduringtraining}
+\end{figure}
+	\end{frame}
+	\begin{frame}
+		\begin{figure}
+			\centering
+			\includegraphics[width=1\linewidth]{heat_map_comparision_of_CFA}
+			\caption{Biểu đồ nhiệt khi có thích ứng bao lồi (phải) và không có thích ứng bao lồi (trái).}
+			\label{fig:heatmapcomparisionofcfa}
+		\end{figure}
+		
+	\end{frame}
+\begin{frame}{Một số kết quả thu được của CFA}
+			
+	\begin{figure}
+		\centering
+		\includegraphics[width=1\linewidth]{res_mmrotate3}
 	
+		\label{fig:resmmrotate3}
+	\end{figure}
+\end{frame}
+\begin{frame}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\linewidth]{res_mmrotate4}
 	
+		\label{fig:resmmrotate4}
+	\end{figure}
+\end{frame}
+\begin{frame}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\linewidth]{res_mmrotate5}
+	
+		\label{fig:resmmrotate5}
+	\end{figure}
+\end{frame}
+\begin{frame}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.9\linewidth]{res_mmrotate2}
+		\label{fig:resmmrotate2}
+	\end{figure}
+\end{frame}
+
 \end{document}

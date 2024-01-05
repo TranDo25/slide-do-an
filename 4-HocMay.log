@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.8)  4 JAN 2024 15:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.8)  5 JAN 2024 14:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1034,6 +1034,15 @@ Package bm Info: No bold for \U/rsfs/m/n, using \pmb.
 \symboldpureletters=\mathgroup11
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
+(c:/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip67
+\enit@outerparindent=\dimen332
+\enit@toks=\toks48
+\enit@inbox=\box83
+\enit@count@id=\count358
+\enitdp@description=\count359
+)
 (c:/texlive/2023/texmf-dist/tex/latex/bbm-macros/bbm.sty
 Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
 LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
@@ -1043,41 +1052,41 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 )
 (c:/texlive/2023/texmf-dist/tex/latex/cooltooltips/cooltooltips.sty
 Package: cooltooltips 2021/08/08 v1.1 Cool PDF tooltips
-\ctip@content@box=\box83
+\ctip@content@box=\box84
 )
 (./colordef.sty) (./beamerdefs.sty
-\c@mexample=\count358
+\c@mexample=\count360
 ) (./lvblisting.sty)
 (c:/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
 
 (c:/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count359
-\calc@Bcount=\count360
-\calc@Adimen=\dimen332
-\calc@Bdimen=\dimen333
-\calc@Askip=\skip67
-\calc@Bskip=\skip68
+\calc@Acount=\count361
+\calc@Bcount=\count362
+\calc@Adimen=\dimen333
+\calc@Bdimen=\dimen334
+\calc@Askip=\skip68
+\calc@Bskip=\skip69
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count361
-\calc@Cskip=\skip69
+\calc@Ccount=\count363
+\calc@Cskip=\skip70
 )
 (c:/texlive/2023/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count362
-\l_MT_multwidth_dim=\dimen334
-\origjot=\skip70
-\l_MT_shortvdotswithinadjustabove_dim=\dimen335
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen336
-\l_MT_above_intertext_sep=\dimen337
-\l_MT_below_intertext_sep=\dimen338
-\l_MT_above_shortintertext_sep=\dimen339
-\l_MT_below_shortintertext_sep=\dimen340
-\xmathstrut@box=\box84
-\xmathstrut@dim=\dimen341
+\g_MT_multlinerow_int=\count364
+\l_MT_multwidth_dim=\dimen335
+\origjot=\skip71
+\l_MT_shortvdotswithinadjustabove_dim=\dimen336
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen337
+\l_MT_above_intertext_sep=\dimen338
+\l_MT_below_intertext_sep=\dimen339
+\l_MT_above_shortintertext_sep=\dimen340
+\l_MT_below_shortintertext_sep=\dimen341
+\xmathstrut@box=\box85
+\xmathstrut@dim=\dimen342
 )
 (c:/texlive/2023/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
@@ -1085,21 +1094,21 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 (c:/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\c@ALC@unique=\count363
-\c@ALC@line=\count364
-\c@ALC@rem=\count365
-\c@ALC@depth=\count366
-\ALC@tlm=\skip71
-\algorithmicindent=\skip72
+\c@ALC@unique=\count365
+\c@ALC@line=\count366
+\c@ALC@rem=\count367
+\c@ALC@depth=\count368
+\ALC@tlm=\skip72
+\algorithmicindent=\skip73
 )
 (c:/texlive/2023/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count367
-\algocf@hangindent=\skip73
+\c@AlgoLine=\count369
+\algocf@hangindent=\skip74
 
 (c:/texlive/2023/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count368
+\c@checkoddpage=\count370
 )
 (c:/texlive/2023/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
@@ -1107,127 +1116,127 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 (c:/texlive/2023/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\skiptotal=\skip74
-\skiplinenumber=\skip75
-\skiprule=\skip76
-\skiphlne=\skip77
-\skiptext=\skip78
-\skiplength=\skip79
-\algomargin=\skip80
-\skipalgocfslide=\skip81
-\algowidth=\dimen342
-\inoutsize=\dimen343
-\inoutindent=\dimen344
-\interspacetitleruled=\dimen345
-\interspacealgoruled=\dimen346
-\interspacetitleboxruled=\dimen347
-\algocf@ruledwidth=\skip82
-\algocf@inoutbox=\box85
-\algocf@inputbox=\box86
-\AlCapSkip=\skip83
-\AlCapHSkip=\skip84
-\algoskipindent=\skip85
-\algocf@nlbox=\box87
-\algocf@hangingbox=\box88
-\algocf@untilbox=\box89
-\algocf@skipuntil=\skip86
-\algocf@capbox=\box90
-\algocf@lcaptionbox=\skip87
-\algoheightruledefault=\skip88
-\algoheightrule=\skip89
-\algotitleheightruledefault=\skip90
-\algotitleheightrule=\skip91
-\c@algocfline=\count369
-\c@algocfproc=\count370
-\c@algocf=\count371
-\algocf@algoframe=\box91
-\algocf@algobox=\box92
+\skiptotal=\skip75
+\skiplinenumber=\skip76
+\skiprule=\skip77
+\skiphlne=\skip78
+\skiptext=\skip79
+\skiplength=\skip80
+\algomargin=\skip81
+\skipalgocfslide=\skip82
+\algowidth=\dimen343
+\inoutsize=\dimen344
+\inoutindent=\dimen345
+\interspacetitleruled=\dimen346
+\interspacealgoruled=\dimen347
+\interspacetitleboxruled=\dimen348
+\algocf@ruledwidth=\skip83
+\algocf@inoutbox=\box86
+\algocf@inputbox=\box87
+\AlCapSkip=\skip84
+\AlCapHSkip=\skip85
+\algoskipindent=\skip86
+\algocf@nlbox=\box88
+\algocf@hangingbox=\box89
+\algocf@untilbox=\box90
+\algocf@skipuntil=\skip87
+\algocf@capbox=\box91
+\algocf@lcaptionbox=\skip88
+\algoheightruledefault=\skip89
+\algoheightrule=\skip90
+\algotitleheightruledefault=\skip91
+\algotitleheightrule=\skip92
+\c@algocfline=\count371
+\c@algocfproc=\count372
+\c@algocf=\count373
+\algocf@algoframe=\box92
+\algocf@algobox=\box93
 )
 (c:/texlive/2023/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count372
-\float@exts=\toks48
-\float@box=\box93
-\@float@everytoks=\toks49
-\@floatcapt=\box94
+\c@float@type=\count374
+\float@exts=\toks49
+\float@box=\box94
+\@float@everytoks=\toks50
+\@floatcapt=\box95
 )
-\c@Not=\count373
-\c@Hypo=\count374
-\c@Theo=\count375
-\c@Prop=\count376
-\c@Coro=\count377
-\c@Algo=\count378
-\c@Defi=\count379
-\c@Lem=\count380
-\c@Assu=\count381
+\c@Not=\count375
+\c@Hypo=\count376
+\c@Theo=\count377
+\c@Prop=\count378
+\c@Coro=\count379
+\c@Algo=\count380
+\c@Defi=\count381
+\c@Lem=\count382
+\c@Assu=\count383
 
 (c:/texlive/2023/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
 (c:/texlive/2023/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count382
+\lrq@indent=\count384
 
 (c:/texlive/2023/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count383
-\c@listtotal=\count384
-\c@listcount=\count385
-\c@liststart=\count386
-\c@liststop=\count387
-\c@citecount=\count388
-\c@citetotal=\count389
-\c@multicitecount=\count390
-\c@multicitetotal=\count391
-\c@instcount=\count392
-\c@maxnames=\count393
-\c@minnames=\count394
-\c@maxitems=\count395
-\c@minitems=\count396
-\c@citecounter=\count397
-\c@maxcitecounter=\count398
-\c@savedcitecounter=\count399
-\c@uniquelist=\count400
-\c@uniquename=\count401
-\c@refsection=\count402
-\c@refsegment=\count403
-\c@maxextratitle=\count404
-\c@maxextratitleyear=\count405
-\c@maxextraname=\count406
-\c@maxextradate=\count407
-\c@maxextraalpha=\count408
-\c@abbrvpenalty=\count409
-\c@highnamepenalty=\count410
-\c@lownamepenalty=\count411
-\c@maxparens=\count412
-\c@parenlevel=\count413
-\blx@tempcnta=\count414
-\blx@tempcntb=\count415
-\blx@tempcntc=\count416
-\c@blx@maxsection=\count417
-\blx@maxsegment@0=\count418
-\blx@notetype=\count419
-\blx@parenlevel@text=\count420
-\blx@parenlevel@foot=\count421
-\blx@sectionciteorder@0=\count422
-\blx@sectionciteorderinternal@0=\count423
-\blx@entrysetcounter=\count424
-\blx@biblioinstance=\count425
-\labelnumberwidth=\skip92
-\labelalphawidth=\skip93
-\biblabelsep=\skip94
-\bibitemsep=\skip95
-\bibnamesep=\skip96
-\bibinitsep=\skip97
-\bibparsep=\skip98
-\bibhang=\skip99
+\c@tabx@nest=\count385
+\c@listtotal=\count386
+\c@listcount=\count387
+\c@liststart=\count388
+\c@liststop=\count389
+\c@citecount=\count390
+\c@citetotal=\count391
+\c@multicitecount=\count392
+\c@multicitetotal=\count393
+\c@instcount=\count394
+\c@maxnames=\count395
+\c@minnames=\count396
+\c@maxitems=\count397
+\c@minitems=\count398
+\c@citecounter=\count399
+\c@maxcitecounter=\count400
+\c@savedcitecounter=\count401
+\c@uniquelist=\count402
+\c@uniquename=\count403
+\c@refsection=\count404
+\c@refsegment=\count405
+\c@maxextratitle=\count406
+\c@maxextratitleyear=\count407
+\c@maxextraname=\count408
+\c@maxextradate=\count409
+\c@maxextraalpha=\count410
+\c@abbrvpenalty=\count411
+\c@highnamepenalty=\count412
+\c@lownamepenalty=\count413
+\c@maxparens=\count414
+\c@parenlevel=\count415
+\blx@tempcnta=\count416
+\blx@tempcntb=\count417
+\blx@tempcntc=\count418
+\c@blx@maxsection=\count419
+\blx@maxsegment@0=\count420
+\blx@notetype=\count421
+\blx@parenlevel@text=\count422
+\blx@parenlevel@foot=\count423
+\blx@sectionciteorder@0=\count424
+\blx@sectionciteorderinternal@0=\count425
+\blx@entrysetcounter=\count426
+\blx@biblioinstance=\count427
+\labelnumberwidth=\skip93
+\labelalphawidth=\skip94
+\biblabelsep=\skip95
+\bibitemsep=\skip96
+\bibnamesep=\skip97
+\bibinitsep=\skip98
+\bibparsep=\skip99
+\bibhang=\skip100
 \blx@bcfin=\read4
 \blx@bcfout=\write5
 \blx@langwohyphens=\language88
-\c@mincomprange=\count426
-\c@maxcomprange=\count427
-\c@mincompwidth=\count428
+\c@mincomprange=\count428
+\c@maxcomprange=\count429
+\c@mincompwidth=\count430
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1238,88 +1247,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count429
-\c@savedafterword=\count430
-\c@annotator=\count431
-\c@savedannotator=\count432
-\c@author=\count433
-\c@savedauthor=\count434
-\c@bookauthor=\count435
-\c@savedbookauthor=\count436
-\c@commentator=\count437
-\c@savedcommentator=\count438
-\c@editor=\count439
-\c@savededitor=\count440
-\c@editora=\count441
-\c@savededitora=\count442
-\c@editorb=\count443
-\c@savededitorb=\count444
-\c@editorc=\count445
-\c@savededitorc=\count446
-\c@foreword=\count447
-\c@savedforeword=\count448
-\c@holder=\count449
-\c@savedholder=\count450
-\c@introduction=\count451
-\c@savedintroduction=\count452
-\c@namea=\count453
-\c@savednamea=\count454
-\c@nameb=\count455
-\c@savednameb=\count456
-\c@namec=\count457
-\c@savednamec=\count458
-\c@translator=\count459
-\c@savedtranslator=\count460
-\c@shortauthor=\count461
-\c@savedshortauthor=\count462
-\c@shorteditor=\count463
-\c@savedshorteditor=\count464
-\c@labelname=\count465
-\c@savedlabelname=\count466
-\c@institution=\count467
-\c@savedinstitution=\count468
-\c@lista=\count469
-\c@savedlista=\count470
-\c@listb=\count471
-\c@savedlistb=\count472
-\c@listc=\count473
-\c@savedlistc=\count474
-\c@listd=\count475
-\c@savedlistd=\count476
-\c@liste=\count477
-\c@savedliste=\count478
-\c@listf=\count479
-\c@savedlistf=\count480
-\c@location=\count481
-\c@savedlocation=\count482
-\c@organization=\count483
-\c@savedorganization=\count484
-\c@origlocation=\count485
-\c@savedoriglocation=\count486
-\c@origpublisher=\count487
-\c@savedorigpublisher=\count488
-\c@publisher=\count489
-\c@savedpublisher=\count490
-\c@language=\count491
-\c@savedlanguage=\count492
-\c@origlanguage=\count493
-\c@savedoriglanguage=\count494
-\c@pageref=\count495
-\c@savedpageref=\count496
-\shorthandwidth=\skip100
-\shortjournalwidth=\skip101
-\shortserieswidth=\skip102
-\shorttitlewidth=\skip103
-\shortauthorwidth=\skip104
-\shorteditorwidth=\skip105
-\locallabelnumberwidth=\skip106
-\locallabelalphawidth=\skip107
-\localshorthandwidth=\skip108
-\localshortjournalwidth=\skip109
-\localshortserieswidth=\skip110
-\localshorttitlewidth=\skip111
-\localshortauthorwidth=\skip112
-\localshorteditorwidth=\skip113
+\c@afterword=\count431
+\c@savedafterword=\count432
+\c@annotator=\count433
+\c@savedannotator=\count434
+\c@author=\count435
+\c@savedauthor=\count436
+\c@bookauthor=\count437
+\c@savedbookauthor=\count438
+\c@commentator=\count439
+\c@savedcommentator=\count440
+\c@editor=\count441
+\c@savededitor=\count442
+\c@editora=\count443
+\c@savededitora=\count444
+\c@editorb=\count445
+\c@savededitorb=\count446
+\c@editorc=\count447
+\c@savededitorc=\count448
+\c@foreword=\count449
+\c@savedforeword=\count450
+\c@holder=\count451
+\c@savedholder=\count452
+\c@introduction=\count453
+\c@savedintroduction=\count454
+\c@namea=\count455
+\c@savednamea=\count456
+\c@nameb=\count457
+\c@savednameb=\count458
+\c@namec=\count459
+\c@savednamec=\count460
+\c@translator=\count461
+\c@savedtranslator=\count462
+\c@shortauthor=\count463
+\c@savedshortauthor=\count464
+\c@shorteditor=\count465
+\c@savedshorteditor=\count466
+\c@labelname=\count467
+\c@savedlabelname=\count468
+\c@institution=\count469
+\c@savedinstitution=\count470
+\c@lista=\count471
+\c@savedlista=\count472
+\c@listb=\count473
+\c@savedlistb=\count474
+\c@listc=\count475
+\c@savedlistc=\count476
+\c@listd=\count477
+\c@savedlistd=\count478
+\c@liste=\count479
+\c@savedliste=\count480
+\c@listf=\count481
+\c@savedlistf=\count482
+\c@location=\count483
+\c@savedlocation=\count484
+\c@organization=\count485
+\c@savedorganization=\count486
+\c@origlocation=\count487
+\c@savedoriglocation=\count488
+\c@origpublisher=\count489
+\c@savedorigpublisher=\count490
+\c@publisher=\count491
+\c@savedpublisher=\count492
+\c@language=\count493
+\c@savedlanguage=\count494
+\c@origlanguage=\count495
+\c@savedoriglanguage=\count496
+\c@pageref=\count497
+\c@savedpageref=\count498
+\shorthandwidth=\skip101
+\shortjournalwidth=\skip102
+\shortserieswidth=\skip103
+\shorttitlewidth=\skip104
+\shortauthorwidth=\skip105
+\shorteditorwidth=\skip106
+\locallabelnumberwidth=\skip107
+\locallabelalphawidth=\skip108
+\localshorthandwidth=\skip109
+\localshortjournalwidth=\skip110
+\localshortserieswidth=\skip111
+\localshorttitlewidth=\skip112
+\localshortauthorwidth=\skip113
+\localshorteditorwidth=\skip114
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1331,19 +1340,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (c:/texlive/2023/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count497
-\c@textcitetotal=\count498
-\c@textcitemaxnames=\count499
-\c@biburlbigbreakpenalty=\count500
-\c@biburlbreakpenalty=\count501
-\c@biburlnumpenalty=\count502
-\c@biburlucpenalty=\count503
-\c@biburllcpenalty=\count504
+\c@textcitecount=\count499
+\c@textcitetotal=\count500
+\c@textcitemaxnames=\count501
+\c@biburlbigbreakpenalty=\count502
+\c@biburlbreakpenalty=\count503
+\c@biburlnumpenalty=\count504
+\c@biburlucpenalty=\count505
+\c@biburllcpenalty=\count506
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count505
+\c@smartand=\count507
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -1355,8 +1364,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (c:/texlive/2023/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count506
-\c@bbx:relatedtotal=\count507
+\c@bbx:relatedcount=\count508
+\c@bbx:relatedtotal=\count509
 ))
 Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
@@ -1368,10 +1377,10 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (c:/texlive/2023/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count508
-\c@cbx@tempcntb=\count509
-\c@cbx@tempcntc=\count510
-\c@cbx@tempcntd=\count511
+\c@cbx@tempcnta=\count510
+\c@cbx@tempcntb=\count511
+\c@cbx@tempcntc=\count512
+\c@cbx@tempcntd=\count513
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1402,8 +1411,8 @@ Package: expl3 2023-02-22 L3 programming layer (loader)
 
 (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count512
-\l__pdf_internal_box=\box95
+\l__color_backend_stack_int=\count514
+\l__pdf_internal_box=\box96
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2023-02-22 L3 programming layer (loader) 
@@ -1424,22 +1433,22 @@ Package: caption 2023/03/12 v3.6j Customizing captions (AR)
 
 (c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
-\caption@tempdima=\dimen348
-\captionmargin=\dimen349
-\caption@leftmargin=\dimen350
-\caption@rightmargin=\dimen351
-\caption@width=\dimen352
-\caption@indent=\dimen353
-\caption@parindent=\dimen354
-\caption@hangindent=\dimen355
+\caption@tempdima=\dimen349
+\captionmargin=\dimen350
+\caption@leftmargin=\dimen351
+\caption@rightmargin=\dimen352
+\caption@width=\dimen353
+\caption@indent=\dimen354
+\caption@parindent=\dimen355
+\caption@hangindent=\dimen356
 Package caption Info: beamer document class detected.
 
 (c:/texlive/2023/texmf-dist/tex/latex/caption/caption-beamer.sto
 File: caption-beamer.sto 2022/01/06 v2.0c Adaption of the caption package to th
 e beamer document classes (AR)
 ))
-\c@caption@flags=\count513
-\c@continuedfloat=\count514
+\c@caption@flags=\count515
+\c@continuedfloat=\count516
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: Hyperref support is turned off
@@ -1447,16 +1456,16 @@ Package caption Info: Hyperref support is turned off
 Package caption Info: listings package is loaded.
 )
 Package caption Info: New subtype `subfigure' on input line 239.
-\c@subfigure=\count515
+\c@subfigure=\count517
 Package caption Info: New subtype `subtable' on input line 239.
-\c@subtable=\count516
+\c@subtable=\count518
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count517
-\@quotereset=\count518
+\@quotelevel=\count519
+\@quotereset=\count520
 (./4-HocMay.aux
 LaTeX Font Info:    Trying to load font information for T5+cmss on input line 2
 1.
@@ -1469,31 +1478,31 @@ LaTeX Warning: Label `ptdd' multiply defined.
 )
 \openout1 = `4-HocMay.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 181.
-LaTeX Font Info:    ... okay on input line 181.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 181.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 183.
+LaTeX Font Info:    ... okay on input line 183.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 183.
 LaTeX Font Info:    Trying to load font information for T5+cmr on input line 18
-1.
+3.
  (c:/texlive/2023/texmf-dist/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 181.
+LaTeX Font Info:    ... okay on input line 183.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1531,17 +1540,17 @@ LaTeX Font Info:    ... okay on input line 181.
 
 (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count519
-\scratchdimen=\dimen356
-\scratchbox=\box96
-\nofMPsegments=\count520
-\nofMParguments=\count521
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count522
-\MPscratchDim=\dimen357
-\MPnumerator=\count523
-\makeMPintoPDFobject=\count524
-\everyMPtoPDFconversion=\toks51
+\scratchcounter=\count521
+\scratchdimen=\dimen357
+\scratchbox=\box97
+\nofMPsegments=\count522
+\nofMParguments=\count523
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count524
+\MPscratchDim=\dimen358
+\MPnumerator=\count525
+\makeMPintoPDFobject=\count526
+\everyMPtoPDFconversion=\toks52
 ) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1551,78 +1560,78 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 181.
+Package hyperref Info: Link coloring OFF on input line 183.
 
 (./4-HocMay.out) (./4-HocMay.out)
 \@outlinefile=\write6
 \openout6 = `4-HocMay.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 181.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 183.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 181.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 183.
 \symnumbers=\mathgroup12
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 181.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 183.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
 (Font)              `pureletters' in the math version `normal' on input line 18
-1.
+3.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/mathkerncmss/m/sl --> T1/cmss/m/it on input line 18
-1.
+3.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 181.
+(Font)              `pureletters' in the math version `bold' on input line 183.
 
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/bx/sl --> T1/cmss/m/it on input line 1
-81.
+83.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 181.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 181.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 181.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 183.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 183.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 183.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 181.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 183.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 181.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 181.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 183.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 183.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 181.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 183.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 181.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 181.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 183.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 183.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 181.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 183.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 181.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 183.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 181.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 183.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 181.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 183.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 181.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 183.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 181.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 183.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 181.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 183.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 181.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 183.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 181.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 181.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 183.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 183.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
 (Font)              `pureletters' in the math version `normal' on input line 18
-1.
+3.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 18
-1.
+3.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 181.
+(Font)              `pureletters' in the math version `bold' on input line 183.
 
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 18
-1.
+3.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 181.
+ut line 183.
 
 (c:/texlive/2023/texmf-dist/tex/latex/translator/translator-basic-dictionary-En
 glish.dict
@@ -1648,13 +1657,13 @@ Dictionary: translator-numbers-dictionary, Language: English
 English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-\c@lstlisting=\count525
+\c@lstlisting=\count527
 Package biblatex Info: Trying to load language 'vietnamese'...
 Package biblatex Info: ... file 'vietnamese.lbx' not found.
 
 
 Package biblatex Warning: Language 'vietnamese' not supported.
-(biblatex)                Using dummy definitions on input line 181.
+(biblatex)                Using dummy definitions on input line 183.
 
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -1664,155 +1673,159 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '4-HocMay.bbl' found.
 (./4-HocMay.bbl)
-Package biblatex Info: Reference section=0 on input line 181.
-Package biblatex Info: Reference segment=0 on input line 181.
+Package biblatex Info: Reference section=0 on input line 183.
+Package biblatex Info: Reference segment=0 on input line 183.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./4-HocMay.nav)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 181
+LaTeX Font Info:    Trying to load font information for U+msa on input line 183
 .
 
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 181
+LaTeX Font Info:    Trying to load font information for U+msb on input line 183
 .
 
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 18
-1.
+3.
 
 (c:/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 181.
+ut line 183.
 
 (c:/texlive/2023/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
 (./4-HocMay.toc)
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+Overfull \vbox (1.57211pt too high) has occurred while \output is active []
 
 
 [1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
- <./Figures/logoptit.png>] (./4-HocMay.toc)
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+ <./Figures/logoptit.png>]
+<do_hoa_may_tinh.png, id=101, 557.83406pt x 333.49594pt>
+File: do_hoa_may_tinh.png Graphic file (type png)
+<use do_hoa_may_tinh.png>
+Package pdftex.def Info: do_hoa_may_tinh.png  used on input line 199.
+(pdftex.def)             Requested size: 215.10196pt x 128.59734pt.
+
+Overfull \vbox (1.57211pt too high) has occurred while \output is active []
 
 
 [2
 
-]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+ <./do_hoa_may_tinh.png>]
+<nhan_dang_mau.png, id=112, 1129.21875pt x 752.8125pt>
+File: nhan_dang_mau.png Graphic file (type png)
+<use nhan_dang_mau.png>
+Package pdftex.def Info: nhan_dang_mau.png  used on input line 207.
+(pdftex.def)             Requested size: 215.10196pt x 143.39195pt.
+
+Overfull \vbox (1.57211pt too high) has occurred while \output is active []
 
 
 [3
 
-{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-(./4-HocMay.toc)
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+ <./nhan_dang_mau.png>]
+<xu_ly_hinh_anh.png, id=122, 578.16pt x 251.43938pt>
+File: xu_ly_hinh_anh.png Graphic file (type png)
+<use xu_ly_hinh_anh.png>
+Package pdftex.def Info: xu_ly_hinh_anh.png  used on input line 216.
+(pdftex.def)             Requested size: 215.10196pt x 93.54521pt.
+
+Overfull \vbox (1.57211pt too high) has occurred while \output is active []
 
 
 [4
 
-]
-<Figures/khoi_tao_tap_diem.png, id=127, 355.3275pt x 307.90031pt>
-File: Figures/khoi_tao_tap_diem.png Graphic file (type png)
-<use Figures/khoi_tao_tap_diem.png>
-Package pdftex.def Info: Figures/khoi_tao_tap_diem.png  used on input line 217.
+ <./xu_ly_hinh_anh.png>]
+<convex_hull_for_clustering.png, id=132, 886.06032pt x 280.79906pt>
+File: convex_hull_for_clustering.png Graphic file (type png)
+<use convex_hull_for_clustering.png>
+Package pdftex.def Info: convex_hull_for_clustering.png  used on input line 225
+.
+(pdftex.def)             Requested size: 215.10196pt x 68.16438pt.
 
-(pdftex.def)             Requested size: 113.81102pt x 98.61937pt.
-
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+Overfull \vbox (1.57211pt too high) has occurred while \output is active []
 
 
 [5
 
- <./Figures/khoi_tao_tap_diem.png>]
-<Figures/khoi_tao_hcn_bao_quanh.png, id=139, 383.93437pt x 331.99031pt>
-File: Figures/khoi_tao_hcn_bao_quanh.png Graphic file (type png)
-<use Figures/khoi_tao_hcn_bao_quanh.png>
-Package pdftex.def Info: Figures/khoi_tao_hcn_bao_quanh.png  used on input line
- 224.
-(pdftex.def)             Requested size: 170.71652pt x 147.62123pt.
+ <./convex_hull_for_clustering.png>]
+<convex_hull_for_classification.png, id=142, 852.18375pt x 322.95656pt>
+File: convex_hull_for_classification.png Graphic file (type png)
+<use convex_hull_for_classification.png>
+Package pdftex.def Info: convex_hull_for_classification.png  used on input line
+ 234.
+(pdftex.def)             Requested size: 215.10196pt x 81.51755pt.
 
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+Overfull \vbox (1.57211pt too high) has occurred while \output is active []
 
 
 [6
 
- <./Figures/khoi_tao_hcn_bao_quanh.png>]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+ <./convex_hull_for_classification.png>]
+<convex_hull_for_identify_outliers.png, id=152, 864.22874pt x 322.20375pt>
+File: convex_hull_for_identify_outliers.png Graphic file (type png)
+<use convex_hull_for_identify_outliers.png>
+Package pdftex.def Info: convex_hull_for_identify_outliers.png  used on input l
+ine 243.
+(pdftex.def)             Requested size: 215.10196pt x 80.19183pt.
+
+Overfull \vbox (1.57211pt too high) has occurred while \output is active []
 
 
 [7
 
-]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+ <./convex_hull_for_identify_outliers.png>]
+<tam_giac_phan_delauney.png, id=163, 677.53125pt x 578.16pt>
+File: tam_giac_phan_delauney.png Graphic file (type png)
+<use tam_giac_phan_delauney.png>
+Package pdftex.def Info: tam_giac_phan_delauney.png  used on input line 263.
+(pdftex.def)             Requested size: 122.91406pt x 104.88475pt.
+<bieu_do_voronoi.png, id=164, 677.53125pt x 677.53125pt>
+File: bieu_do_voronoi.png Graphic file (type png)
+<use bieu_do_voronoi.png>
+Package pdftex.def Info: bieu_do_voronoi.png  used on input line 263.
+(pdftex.def)             Requested size: 122.91406pt x 122.91182pt.
+
+Overfull \vbox (1.57211pt too high) has occurred while \output is active []
 
 
 [8
 
-]
-
-LaTeX Font Warning: Font shape `T5/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 264.
-
-
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+ <./tam_giac_phan_delauney.png> <./bieu_do_voronoi.png>] (./4-HocMay.toc)
+Overfull \vbox (1.57211pt too high) has occurred while \output is active []
 
 
 [9
 
 ]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+Overfull \vbox (1.57211pt too high) has occurred while \output is active []
 
 
 [10
 
-]
-Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+] (./4-HocMay.toc)
+Overfull \vbox (1.57211pt too high) has occurred while \output is active []
 
 
 [11
 
-]
-<outer_delta0.png, id=201, 642.4pt x 481.8pt>
-File: outer_delta0.png Graphic file (type png)
-<use outer_delta0.png>
-Package pdftex.def Info: outer_delta0.png  used on input line 324.
-(pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
-<outer_delta2.png, id=202, 642.4pt x 481.8pt>
-File: outer_delta2.png Graphic file (type png)
-<use outer_delta2.png>
-Package pdftex.def Info: outer_delta2.png  used on input line 324.
-(pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
-<outer_delta10.png, id=203, 642.4pt x 481.8pt>
-File: outer_delta10.png Graphic file (type png)
-<use outer_delta10.png>
-Package pdftex.def Info: outer_delta10.png  used on input line 324.
-(pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
-<outer_delta50.png, id=204, 642.4pt x 481.8pt>
-File: outer_delta50.png Graphic file (type png)
-<use outer_delta50.png>
-Package pdftex.def Info: outer_delta50.png  used on input line 324.
-(pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
-
-Overfull \vbox (12.12474pt too high) detected at line 324
- []
-
-
+] (./4-HocMay.toc)
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
 [12
 
- <./outer_delta0.png (PNG copy)> <./outer_delta2.png (PNG copy)> <./outer_delta
-10.png (PNG copy)> <./outer_delta50.png (PNG copy)>] (./4-HocMay.toc)
+] (./4-HocMay.toc)
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
@@ -1824,36 +1837,40 @@ Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 [14
 
-]
-Overfull \hbox (1.765pt too wide) in paragraph at lines 350--350
-\T5/cmss/m/n/10.95 "$[][]$", 
- []
-
-
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+(./4-HocMay.toc)
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
 [15
 
 ]
-<initial_polygon_inner.png, id=253, 642.4pt x 481.8pt>
-File: initial_polygon_inner.png Graphic file (type png)
-<use initial_polygon_inner.png>
-Package pdftex.def Info: initial_polygon_inner.png  used on input line 358.
-(pdftex.def)             Requested size: 215.10196pt x 161.32497pt.
+<Figures/khoi_tao_tap_diem.png, id=293, 355.3275pt x 307.90031pt>
+File: Figures/khoi_tao_tap_diem.png Graphic file (type png)
+<use Figures/khoi_tao_tap_diem.png>
+Package pdftex.def Info: Figures/khoi_tao_tap_diem.png  used on input line 301.
+
+(pdftex.def)             Requested size: 113.81102pt x 98.61937pt.
 
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
 [16
 
- <./initial_polygon_inner.png (PNG copy)>]
+ <./Figures/khoi_tao_tap_diem.png>]
+<Figures/khoi_tao_hcn_bao_quanh.png, id=304, 383.93437pt x 331.99031pt>
+File: Figures/khoi_tao_hcn_bao_quanh.png Graphic file (type png)
+<use Figures/khoi_tao_hcn_bao_quanh.png>
+Package pdftex.def Info: Figures/khoi_tao_hcn_bao_quanh.png  used on input line
+ 308.
+(pdftex.def)             Requested size: 170.71652pt x 147.62123pt.
+
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
 [17
 
-]
+ <./Figures/khoi_tao_hcn_bao_quanh.png>]
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
@@ -1866,286 +1883,394 @@ Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 [19
 
 ]
+
+LaTeX Font Warning: Font shape `T5/cmss/m/it' in size <10.95> not available
+(Font)              Font shape `T5/cmss/m/sl' tried instead on input line 348.
+
+
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
 [20
 
 ]
-<inner_delta0.png, id=299, 642.4pt x 481.8pt>
-File: inner_delta0.png Graphic file (type png)
-<use inner_delta0.png>
-Package pdftex.def Info: inner_delta0.png  used on input line 433.
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[21
+
+]
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[22
+
+]
+<outer_delta0.png, id=365, 642.4pt x 481.8pt>
+File: outer_delta0.png Graphic file (type png)
+<use outer_delta0.png>
+Package pdftex.def Info: outer_delta0.png  used on input line 408.
 (pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
-<inner_delta2.png, id=300, 642.4pt x 481.8pt>
-File: inner_delta2.png Graphic file (type png)
-<use inner_delta2.png>
-Package pdftex.def Info: inner_delta2.png  used on input line 433.
+<outer_delta2.png, id=366, 642.4pt x 481.8pt>
+File: outer_delta2.png Graphic file (type png)
+<use outer_delta2.png>
+Package pdftex.def Info: outer_delta2.png  used on input line 408.
 (pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
-<inner_delta10.png, id=301, 642.4pt x 481.8pt>
-File: inner_delta10.png Graphic file (type png)
-<use inner_delta10.png>
-Package pdftex.def Info: inner_delta10.png  used on input line 433.
+<outer_delta10.png, id=367, 642.4pt x 481.8pt>
+File: outer_delta10.png Graphic file (type png)
+<use outer_delta10.png>
+Package pdftex.def Info: outer_delta10.png  used on input line 408.
 (pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
-<inner_delta50.png, id=302, 642.4pt x 481.8pt>
-File: inner_delta50.png Graphic file (type png)
-<use inner_delta50.png>
-Package pdftex.def Info: inner_delta50.png  used on input line 433.
+<outer_delta50.png, id=368, 642.4pt x 481.8pt>
+File: outer_delta50.png Graphic file (type png)
+<use outer_delta50.png>
+Package pdftex.def Info: outer_delta50.png  used on input line 408.
 (pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
 
-Overfull \vbox (12.25517pt too high) detected at line 433
+Overfull \vbox (12.12474pt too high) detected at line 408
  []
 
 
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
-[21
+[23
+
+ <./outer_delta0.png (PNG copy)> <./outer_delta2.png (PNG copy)> <./outer_delta
+10.png (PNG copy)> <./outer_delta50.png (PNG copy)>] (./4-HocMay.toc)
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[24
+
+]
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[25
+
+]
+Overfull \hbox (1.765pt too wide) in paragraph at lines 434--434
+\T5/cmss/m/n/10.95 "$[][]$", 
+ []
+
+
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[26
+
+]
+<initial_polygon_inner.png, id=421, 642.4pt x 481.8pt>
+File: initial_polygon_inner.png Graphic file (type png)
+<use initial_polygon_inner.png>
+Package pdftex.def Info: initial_polygon_inner.png  used on input line 442.
+(pdftex.def)             Requested size: 215.10196pt x 161.32497pt.
+
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[27
+
+ <./initial_polygon_inner.png (PNG copy)>]
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[28
+
+]
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[29
+
+]
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[30
+
+]
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[31
+
+]
+<inner_delta0.png, id=466, 642.4pt x 481.8pt>
+File: inner_delta0.png Graphic file (type png)
+<use inner_delta0.png>
+Package pdftex.def Info: inner_delta0.png  used on input line 517.
+(pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
+<inner_delta2.png, id=467, 642.4pt x 481.8pt>
+File: inner_delta2.png Graphic file (type png)
+<use inner_delta2.png>
+Package pdftex.def Info: inner_delta2.png  used on input line 517.
+(pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
+<inner_delta10.png, id=468, 642.4pt x 481.8pt>
+File: inner_delta10.png Graphic file (type png)
+<use inner_delta10.png>
+Package pdftex.def Info: inner_delta10.png  used on input line 517.
+(pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
+<inner_delta50.png, id=469, 642.4pt x 481.8pt>
+File: inner_delta50.png Graphic file (type png)
+<use inner_delta50.png>
+Package pdftex.def Info: inner_delta50.png  used on input line 517.
+(pdftex.def)             Requested size: 122.91406pt x 92.18254pt.
+
+Overfull \vbox (12.25517pt too high) detected at line 517
+ []
+
+
+Overfull \vbox (2.16501pt too high) has occurred while \output is active []
+
+
+[32
 
  <./inner_delta0.png (PNG copy)> <./inner_delta2.png (PNG copy)> <./inner_delta
 10.png (PNG copy)> <./inner_delta50.png (PNG copy)>] (./4-HocMay.toc)
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[22
+[33
 
 ] (./4-HocMay.toc)
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[23
+[34
 
 ]
-<reppoint_bouding_box.jpg, id=348, 136.76903pt x 145.3171pt>
+<reppoint_bouding_box.jpg, id=521, 136.76903pt x 145.3171pt>
 File: reppoint_bouding_box.jpg Graphic file (type jpg)
 <use reppoint_bouding_box.jpg>
-Package pdftex.def Info: reppoint_bouding_box.jpg  used on input line 453.
+Package pdftex.def Info: reppoint_bouding_box.jpg  used on input line 537.
 (pdftex.def)             Requested size: 85.35826pt x 90.69434pt.
-<reception_field_w_aliasing.jpg, id=349, 156.97354pt x 147.64839pt>
+<reception_field_w_aliasing.jpg, id=522, 156.97354pt x 147.64839pt>
 File: reception_field_w_aliasing.jpg Graphic file (type jpg)
 <use reception_field_w_aliasing.jpg>
-Package pdftex.def Info: reception_field_w_aliasing.jpg  used on input line 453
+Package pdftex.def Info: reception_field_w_aliasing.jpg  used on input line 537
 .
 (pdftex.def)             Requested size: 85.35826pt x 80.28766pt.
 
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[24
+[35
 
  <./reppoint_bouding_box.jpg> <./reception_field_w_aliasing.jpg>]
-<ConvexHull_Bouding_Box.jpg, id=357, 135.21484pt x 145.3171pt>
+<ConvexHull_Bouding_Box.jpg, id=531, 135.21484pt x 145.3171pt>
 File: ConvexHull_Bouding_Box.jpg Graphic file (type jpg)
 <use ConvexHull_Bouding_Box.jpg>
-Package pdftex.def Info: ConvexHull_Bouding_Box.jpg  used on input line 471.
+Package pdftex.def Info: ConvexHull_Bouding_Box.jpg  used on input line 555.
 (pdftex.def)             Requested size: 85.35826pt x 91.7365pt.
-<reception_field_wo_aliasing.jpg, id=358, 157.75064pt x 143.76291pt>
+<reception_field_wo_aliasing.jpg, id=532, 157.75064pt x 143.76291pt>
 File: reception_field_wo_aliasing.jpg Graphic file (type jpg)
 <use reception_field_wo_aliasing.jpg>
-Package pdftex.def Info: reception_field_wo_aliasing.jpg  used on input line 47
-1.
+Package pdftex.def Info: reception_field_wo_aliasing.jpg  used on input line 55
+5.
 (pdftex.def)             Requested size: 85.35826pt x 77.78876pt.
 
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[25
+[36
 
  <./ConvexHull_Bouding_Box.jpg> <./reception_field_wo_aliasing.jpg>]
 (./4-HocMay.toc)
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[26
+[37
 
 ]
-<./Hinh_1.jpg, id=382, 1790.69pt x 680.5425pt>
+<./Hinh_1.jpg, id=559, 1790.69pt x 680.5425pt>
 File: ./Hinh_1.jpg Graphic file (type jpg)
 <use ./Hinh_1.jpg>
-Package pdftex.def Info: ./Hinh_1.jpg  used on input line 482.
+Package pdftex.def Info: ./Hinh_1.jpg  used on input line 566.
 (pdftex.def)             Requested size: 284.52756pt x 108.13097pt.
 
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[27
+[38
 
  <./Hinh_1.jpg>]
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[28
+[39
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{ptdd}) has be
 en already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.503 \end{frame}
+l.587 \end{frame}
                  
-<Figures/feature_point_offset_prediction.png, id=398, 302.63063pt x 121.20282pt
+<Figures/feature_point_offset_prediction.png, id=575, 302.63063pt x 121.20282pt
 >
 File: Figures/feature_point_offset_prediction.png Graphic file (type png)
 <use Figures/feature_point_offset_prediction.png>
 Package pdftex.def Info: Figures/feature_point_offset_prediction.png  used on i
-nput line 503.
+nput line 587.
 (pdftex.def)             Requested size: 227.62204pt x 91.16264pt.
 
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[29
+[40
 
  <./Figures/feature_point_offset_prediction.png>]
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[30
+[41
 
 ]
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[31
+[42
 
 ]
-<./Hinh_8.jpg, id=427, 1351.0475pt x 600.2425pt>
+<./Hinh_8.jpg, id=602, 1351.0475pt x 600.2425pt>
 File: ./Hinh_8.jpg Graphic file (type jpg)
 <use ./Hinh_8.jpg>
-Package pdftex.def Info: ./Hinh_8.jpg  used on input line 532.
+Package pdftex.def Info: ./Hinh_8.jpg  used on input line 616.
 (pdftex.def)             Requested size: 284.52756pt x 126.40268pt.
 
-Overfull \vbox (10.09099pt too high) detected at line 532
+Overfull \vbox (10.09099pt too high) detected at line 616
  []
 
 
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[32
+[43
 
  <./Hinh_8.jpg>]
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[33
+[44
 
 ]
-<./Hinh_9.jpg, id=443, 508.22128pt x 274.31516pt>
+<./Hinh_9.jpg, id=619, 508.22128pt x 274.31516pt>
 File: ./Hinh_9.jpg Graphic file (type jpg)
 <use ./Hinh_9.jpg>
-Package pdftex.def Info: ./Hinh_9.jpg  used on input line 549.
+Package pdftex.def Info: ./Hinh_9.jpg  used on input line 633.
 (pdftex.def)             Requested size: 284.52756pt x 153.57356pt.
 
-Overfull \vbox (19.35034pt too high) detected at line 549
+Overfull \vbox (19.35034pt too high) detected at line 633
  []
 
 
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[34
+[45
 
  <./Hinh_9.jpg>]
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[35
+[46
 
 ]
 Overfull \vbox (2.92735pt too high) has occurred while \output is active []
 
 
-[36
+[47
 
 ] (./4-HocMay.toc)
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
-[37
+[48
 
 ]
-<Figures/convex_hull_evaluation_when_training.png, id=483, 834.11626pt x 359.09
+<Figures/convex_hull_evaluation_when_training.png, id=662, 834.11626pt x 359.09
 157pt>
 File: Figures/convex_hull_evaluation_when_training.png Graphic file (type png)
 <use Figures/convex_hull_evaluation_when_training.png>
 Package pdftex.def Info: Figures/convex_hull_evaluation_when_training.png  used
- on input line 578.
+ on input line 662.
 (pdftex.def)             Requested size: 307.28987pt x 132.29195pt.
 
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
-[38
+[49
 
  <./Figures/convex_hull_evaluation_when_training.png>]
-<Figures/heat_map_comparision_of_CFA.png, id=493, 822.07124pt x 234.8775pt>
+<Figures/heat_map_comparision_of_CFA.png, id=673, 822.07124pt x 234.8775pt>
 File: Figures/heat_map_comparision_of_CFA.png Graphic file (type png)
 <use Figures/heat_map_comparision_of_CFA.png>
 Package pdftex.def Info: Figures/heat_map_comparision_of_CFA.png  used on input
- line 587.
+ line 671.
 (pdftex.def)             Requested size: 307.28987pt x 87.7957pt.
 
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
-[39
+[50
 
  <./Figures/heat_map_comparision_of_CFA.png>]
-<res_mmrotate3.jpg, id=503, 929.4725pt x 470.75874pt>
+<res_mmrotate3.jpg, id=683, 929.4725pt x 470.75874pt>
 File: res_mmrotate3.jpg Graphic file (type jpg)
 <use res_mmrotate3.jpg>
-Package pdftex.def Info: res_mmrotate3.jpg  used on input line 596.
+Package pdftex.def Info: res_mmrotate3.jpg  used on input line 680.
 (pdftex.def)             Requested size: 307.28987pt x 155.63101pt.
 
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
-[40
+[51
 
  <./res_mmrotate3.jpg>]
-<res_mmrotate4.jpg, id=512, 1028.84375pt x 782.925pt>
+<res_mmrotate4.jpg, id=692, 1028.84375pt x 782.925pt>
 File: res_mmrotate4.jpg Graphic file (type jpg)
 <use res_mmrotate4.jpg>
-Package pdftex.def Info: res_mmrotate4.jpg  used on input line 604.
+Package pdftex.def Info: res_mmrotate4.jpg  used on input line 688.
 (pdftex.def)             Requested size: 245.83282pt x 187.06958pt.
 
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
-[41
+[52
 
  <./res_mmrotate4.jpg>]
-<res_mmrotate5.jpg, id=521, 1020.81375pt x 820.06375pt>
+<res_mmrotate5.jpg, id=701, 1020.81375pt x 820.06375pt>
 File: res_mmrotate5.jpg Graphic file (type jpg)
 <use res_mmrotate5.jpg>
-Package pdftex.def Info: res_mmrotate5.jpg  used on input line 612.
+Package pdftex.def Info: res_mmrotate5.jpg  used on input line 696.
 (pdftex.def)             Requested size: 276.559pt x 222.17096pt.
 
-Overfull \vbox (21.86104pt too high) detected at line 612
+Overfull \vbox (21.86104pt too high) detected at line 696
  []
 
 
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
-[42
+[53
 
  <./res_mmrotate5.jpg>]
-<res_mmrotate2.jpg, id=531, 1033.8625pt x 763.85374pt>
+<res_mmrotate2.jpg, id=710, 1033.8625pt x 763.85374pt>
 File: res_mmrotate2.jpg Graphic file (type jpg)
 <use res_mmrotate2.jpg>
-Package pdftex.def Info: res_mmrotate2.jpg  used on input line 619.
+Package pdftex.def Info: res_mmrotate2.jpg  used on input line 703.
 (pdftex.def)             Requested size: 276.559pt x 204.33177pt.
 
-Overfull \vbox (4.02185pt too high) detected at line 619
+Overfull \vbox (4.02185pt too high) detected at line 703
  []
 
 
 Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 
 
-[43
+[54
 
  <./res_mmrotate2.jpg>]
 \tf@nav=\write7
@@ -2162,19 +2287,19 @@ Overfull \vbox (2.16501pt too high) has occurred while \output is active []
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `4-HocMay.out' has not changed.
-(rerunfilecheck)             Checksum: 8AFCA2EE96AF4C8E4CD74312C4F1A363;1989.
+(rerunfilecheck)             Checksum: 01485A5EFBB6962B90A572E20B877417;2564.
 Package logreq Info: Writing requests to '4-HocMay.run.xml'.
 \openout1 = `4-HocMay.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38712 strings out of 476025
- 754964 string characters out of 5794015
- 1862382 words of memory out of 5000000
- 58286 multiletter control sequences out of 15000+600000
+ 39184 strings out of 476025
+ 763583 string characters out of 5794015
+ 1863382 words of memory out of 5000000
+ 58712 multiletter control sequences out of 15000+600000
  544509 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,122p,15147b,566s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,16n,122p,15147b,687s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dis
@@ -2191,10 +2316,10 @@ pe1/public/cm-super/sfss1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/vntex/
 vnr/vnss10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnss9.pfb><c:/
 texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnssbx10.pfb><c:/texlive/2023/tex
 mf-dist/fonts/type1/vntex/vnr/vnssi10.pfb>
-Output written on 4-HocMay.pdf (43 pages, 2776609 bytes).
+Output written on 4-HocMay.pdf (54 pages, 4716525 bytes).
 PDF statistics:
- 651 PDF objects out of 1000 (max. 8388607)
- 521 compressed objects within 6 object streams
- 144 named destinations out of 1000 (max. 500000)
- 264 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 836 PDF objects out of 1000 (max. 8388607)
+ 678 compressed objects within 7 object streams
+ 180 named destinations out of 1000 (max. 500000)
+ 328 words of extra memory for PDF output out of 10000 (max. 10000000)
 

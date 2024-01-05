@@ -21,6 +21,8 @@
 \usetikzlibrary{arrows.meta}
 \usepackage{xcolor}
 \usepackage{bm}
+\usepackage{enumitem}
+
 \newcommand*{\B}[1]{\ifmmode\bm{#1}\else\textbf{#1}\fi}
 
 
@@ -146,11 +148,11 @@
 
 
 % Define the authors:
-\authora{\bfseries \textcolor{blue}{\Large Chủ đề: Bao lồi và ứng dụng trong việc định hướng và phát hiện đối tượng có hướng}\vspace{20pt}} % a-c
+\authora{\bfseries \textcolor{blue}{\Large Chủ đề: Bao lồi xấp xỉ, bao lồi trực giao và ứng dụng trong việc định hướng và phát hiện đối tượng có hướng}\vspace{20pt}} % a-c
 
 \authorb{ Giảng viên hướng dẫn: Nguyễn Kiều Linh}
 \authorc{Sinh viên thực hiện: Trần Xuân Độ - B19DCCN183 \\ 
-	\hspace{3.6cm} Đặng Thị Thoa - B19DCCNxxx} 
+	\hspace{3.6cm} Đặng Thị Thoa - B19DCCN676} 
 
 % Define the institute:
 \institute{\bf  Hà Nội, tháng 12 năm 2023}
@@ -184,7 +186,89 @@
 %	\frame[plain]{%
 	%		\titlepage{}
 	%	}
+	\section{Giới thiệu}
 
+	\begin{frame}
+		Bài toán bao lồi của tập hữu hạn điểm là một trong những bài toán đặc biệt quan trọng trong lĩnh vực hình học tính toán:
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\linewidth]{do_hoa_may_tinh}
+			\caption{}
+			\label{fig:dohoamaytinh}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\linewidth]{nhan_dang_mau}
+			\caption{}
+			\label{fig:nhandangmau}
+		\end{figure}
+	\end{frame}
+	\begin{frame}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\linewidth]{xu_ly_hinh_anh}
+			\caption{}
+			\label{fig:xulyhinhanh}
+		\end{figure}
+		
+	\end{frame}
+	\begin{frame}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\linewidth]{convex_hull_for_clustering}
+			\caption{Covnex hull for clustering}
+			\label{fig:convexhullforclustering}
+		\end{figure}
+		
+		\end{frame}
+		\begin{frame}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{convex_hull_for_classification}
+				\caption{Convex hull for classification}
+				\label{fig:convexhullforclassification}
+			\end{figure}
+			
+		\end{frame}
+		\begin{frame}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{convex_hull_for_identify_outliers}
+				\caption{}
+				\label{fig:convexhullforidentifyoutliers}
+			\end{figure}
+			
+		\end{frame}
+	\begin{frame}{Tìm bao lồi là một bước tiền xử lý quan trọng trong các bài toán hình học}
+	\begin{figure}
+		\centering
+		
+		\begin{subfigure}[b]{0.4\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{tam_giac_phan_delauney}
+			\caption{Tam giác phân Delaunay}
+			\label{fig:tamgiacphandelaunay}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.4\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{bieu_do_voronoi}
+			\caption{Biểu đồ Voronoi}
+			\label{fig:bieudovoronoi}
+		\end{subfigure}
+		\label{fig:boitrihaihinh}
+	\end{figure}
+	\end{frame}
+	\subsection{Ứng dụng của bao lồi xấp xỉ}
+	\begin{frame}
+		\begin{itemize}
+				\item Giảm thời gian tính toán so với bao lồi chính xác.
+				\item Không thể tính toán bao lồi chính xác với dữ liệu không chính xác, không đầy đủ, hoặc chứa nhiễu.
+			\end{itemize}
+	\end{frame}
+	\subsection{Ứng dụng của bao lồi trực giao}
 	\section{Thuật toán tính bao lồi xấp xỉ}
 	\subsection{Kiến thức ban đầu}
 	\begin{frame}{Giới thiệu}
